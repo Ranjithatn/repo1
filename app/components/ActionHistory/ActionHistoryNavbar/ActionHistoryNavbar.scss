@@ -1,0 +1,83 @@
+@import "../../../colors.scss";
+
+nav.navbar.actionHistory-navbar {
+  background-color: $dark-gray;
+  display: flex;
+  align-items: center;
+  color: $white;
+  padding: 0 1rem 0 1rem;
+
+
+  flex-grow: 1;
+  display: grid;
+  grid-template-areas: "first second ";
+  grid-template-columns: 1fr;
+  // grid-template-rows: 50px 1fr 1fr 1fr 50px;
+  .first {
+    grid-area: first;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .second {
+    grid-area: second;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    .control{
+      display: flex;
+      position: relative;
+      .icon:first-child{
+        position: absolute;
+        z-index: 9999;
+        padding: 10px 0 0 5px;
+        color: #4a4a4a !important;
+        cursor: pointer; 
+      }
+      .icon:last-child{
+        position: absolute;
+        z-index: 9999;
+        padding: 10px 5px 0 0;
+        color: #4a4a4a !important; 
+        right:0;
+        cursor: pointer;
+      }
+      input[type=text]{
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+  .showFilter{
+    display: flex;
+  }
+  .hideFilter{
+    display: none !important
+  }
+  .select{
+    background-color: $white;
+    border-radius: 3px;
+    border:1px solid #dbdbdb ; 
+    color: #4a4a4a;
+  }
+  .select select{
+    border-left-color: $white !important; 
+  }
+}
+html[dir="rtl"] {
+	nav.navbar.actionHistory-navbar {
+    // direction: ltr;
+    .select select{
+      // direction: ltr;
+      border-right-color: $white !important; 
+    }
+    .showFilter {
+      direction: ltr;      
+    }
+    // .select{
+    //   span{
+    //     direction: ltr;
+    //   }
+    // }
+	}
+}

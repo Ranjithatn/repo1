@@ -1,0 +1,32 @@
+@import "../../../colors.scss";
+
+.jobQueue-table {
+  width: 100%;
+  tr:hover {
+    cursor: pointer;
+  }
+  tr.selected {
+    background-color: rgba(210, 220, 227, 0.3);
+  }
+  td > div.td-status-actions {
+    display: flex;
+    justify-content: space-between;
+    i:hover {
+      cursor: pointer;
+    }
+  }
+  a :hover{
+    color:yellow;
+    text-decoration: underline
+  }
+  td > div.td-actions {
+    display: flex;
+    justify-content: space-between;
+    i:hover {
+      cursor: pointer;
+    }
+    span {
+      color: $green;
+    }
+  }
+}

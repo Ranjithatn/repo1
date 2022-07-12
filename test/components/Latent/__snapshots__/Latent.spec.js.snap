@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Latent /> should render without crashing 1`] = `
+<Latent
+  formatMessage={[Function]}
+  requestImportImage={[MockFunction]}
+  requestShowScannedImage={[Function]}
+>
+  <div
+    className="latent-top"
+  >
+    <Button
+      className="is-primary"
+      id="latentclose"
+      onClick={[Function]}
+      text="cancel"
+    >
+      <button
+        className="button is-primary"
+        disabled={false}
+        id="latentclose"
+        onClick={[Function]}
+        style={Object {}}
+        type="button"
+      >
+        <span>
+          cancel
+        </span>
+      </button>
+    </Button>
+    <div
+      className="left"
+    />
+    <div
+      className="center"
+      style={
+        Object {
+          "marginRight": "200px",
+        }
+      }
+    >
+      <Title
+        as="h1"
+        is="4"
+        text="title.latentInput"
+      >
+        <h1
+          className="title is-4"
+        >
+          title.latentInput
+        </h1>
+      </Title>
+    </div>
+  </div>
+  <div
+    className="latent-content"
+  >
+    <div
+      className="latent-selection"
+    >
+      <FileBrowser
+        className="is-primary is-medium"
+        fileStyle={
+          Object {
+            "display": "block",
+            "height": 45,
+          }
+        }
+        id="importbtn"
+        leftIcon="download"
+        onChange={[Function]}
+        text="import"
+      >
+        <div
+          className="fileUpload button is-primary is-medium"
+        >
+          <Icon
+            icon="download"
+          >
+            <span
+              className="icon"
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+              title=""
+            >
+              <i
+                className="fa fa-download"
+              />
+            </span>
+          </Icon>
+          <span>
+            import
+          </span>
+          <input
+            className="upload is-primary is-medium"
+            id="myInput"
+            onChange={[Function]}
+            style={
+              Object {
+                "display": "block",
+                "height": 45,
+              }
+            }
+            type="file"
+          />
+        </div>
+      </FileBrowser>
+         
+      <Button
+        className="is-primary is-medium"
+        leftIcon="print"
+        onClick={[Function]}
+        text="scan"
+      >
+        <button
+          className="button is-primary is-medium"
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+          type="button"
+        >
+          <Icon
+            icon="print"
+          >
+            <span
+              className="icon"
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+              title=""
+            >
+              <i
+                className="fa fa-print"
+              />
+            </span>
+          </Icon>
+          <span>
+            scan
+          </span>
+        </button>
+      </Button>
+    </div>
+    <Subtitle
+      as="h1"
+      is="5"
+      text="msg.noImgScanned"
+    >
+      <h1
+        className="subtitle is-5"
+      >
+        msg.noImgScanned
+      </h1>
+    </Subtitle>
+    <Subtitle
+      as="h1"
+      is="5"
+      text="msg.pleaseChooseImage"
+    >
+      <h1
+        className="subtitle is-5"
+      >
+        msg.pleaseChooseImage
+      </h1>
+    </Subtitle>
+  </div>
+</Latent>
+`;

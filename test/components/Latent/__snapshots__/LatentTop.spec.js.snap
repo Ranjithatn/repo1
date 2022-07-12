@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Latent /> should render without crashing 1`] = `
+<LatentTop
+  formatMessage={[Function]}
+>
+  <div
+    className="head"
+  >
+    <Button
+      className="is-primary"
+      leftIcon="arrow-left"
+      onClick={[Function]}
+      text="back"
+    >
+      <button
+        className="button is-primary"
+        disabled={false}
+        onClick={[Function]}
+        style={Object {}}
+        type="button"
+      >
+        <Icon
+          icon="arrow-left"
+        >
+          <span
+            className="icon"
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title=""
+          >
+            <i
+              className="fa fa-arrow-left"
+            />
+          </span>
+        </Icon>
+        <span>
+          back
+        </span>
+      </button>
+    </Button>
+        
+    <Button
+      className="is-primary"
+      rightIcon="arrow-right"
+      text="next"
+    >
+      <button
+        className="button is-primary"
+        disabled={false}
+        style={Object {}}
+        type="button"
+      >
+        <span>
+          next
+        </span>
+        <Icon
+          icon="arrow-right"
+        >
+          <span
+            className="icon"
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title=""
+          >
+            <i
+              className="fa fa-arrow-right"
+            />
+          </span>
+        </Icon>
+      </button>
+    </Button>
+       
+  </div>
+</LatentTop>
+`;

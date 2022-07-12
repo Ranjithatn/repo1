@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar /> should render without crashing 1`] = `
+<ProgressBar
+  max="100"
+  type="is-primary"
+>
+  <progress
+    className="progress is-primary"
+    max="100"
+  />
+</ProgressBar>
+`;

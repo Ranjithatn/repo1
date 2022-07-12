@@ -1,0 +1,54 @@
+@import "../../../colors.scss";
+
+#latent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  .latent-innovatric-top {
+    display: flex;
+    align-items: center;
+    justify-content: enter;
+    padding: 10px;
+    background-color: $dark-gray;
+    min-height: 45px;
+    .left,
+    .center,
+    .right {
+      flex: 1;
+    }
+    .center{
+      display: flex;
+      justify-content: center;
+    }
+    .right{
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .title {
+      color: $white;
+      
+    }
+  }
+  .latent-innovatric-content {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    background-color: $dark;
+    // padding-top: 15%;
+    overflow: auto;
+    .latent-innovatric-selection {
+      
+    }
+  }
+}
+html[dir="rtl"] {
+.button {
+            .icon {
+              .fa-arrow-left {
+                padding-right: 15px;
+              }
+            }
+          }
+
+}

@@ -1,0 +1,46 @@
+
+.palm-bio {
+  display: flex;
+  width: 72px;
+}
+
+.palm-bio-right {
+  margin-left: 20px;
+}
+
+.left-lower-palm, .right-lower-palm {
+  width: 45px;
+  height: 35px;
+  background: #6C7B86;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.left-lower-palm {
+  margin-left: 5px;
+}
+.right-lower-palm {
+  margin-right: 5px;
+}
+
+.select .is-small {
+  margin-bottom: 6px;
+}
+
+.select select:not([multiple]) {
+  width: 100%;
+}
+
+.left-writer-palm, .right-writer-palm {
+  width: 15px;
+  height: 35px;
+  background: #6C7B86;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+
+
+
+

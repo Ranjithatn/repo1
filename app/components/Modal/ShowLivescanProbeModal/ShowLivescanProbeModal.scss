@@ -1,0 +1,58 @@
+@import "../../../colors.scss";
+
+.mugshot-modal footer.modal-card-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mugshot-modal label {
+  font-weight: 400;
+}
+.mugshot-modal .mugshot-center {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  min-height: 200px;
+}
+// $modal-content-width:400px;
+.mugshot-modal .mugshot-center > img {
+  object-fit: contain;
+  max-height: 400px;
+}
+.mugshot-modal .modal-card {
+  width: 550px !important;
+}
+.mugshot-modal .hide{
+  display: none;
+}
+.mugshot-modal .show{
+ display: flex; 
+}
+.mugshot-modal{
+  .footer-content{
+    display: grid;
+    flex-grow: 1;
+    grid-template-areas: "left center right";
+    grid-template-columns: 1fr 100px 1fr;
+  
+    .left {
+      grid-area: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .center {
+      grid-area: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .right {
+      grid-area: right;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

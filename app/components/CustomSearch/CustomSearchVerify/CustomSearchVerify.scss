@@ -1,0 +1,347 @@
+@import "../../../colors.scss";
+
+.Workflow-Wrapper.customsearchverify {
+  .top {
+    .biometrics-top {
+      display: flex;
+      flex-grow: 1;
+      display: grid;
+      grid-template-areas: "start center end";
+      grid-template-columns: 1fr 300px 1fr;
+      // padding: 10px;
+      // background-color: $dark-gray;
+      // min-height: 45px;
+      .start {
+        grid-area: start;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+      .center {
+        grid-area: center;
+        display: flex;
+        justify-content: center;
+      }
+      .end {
+        grid-area: end;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+      }
+
+      .title {
+        // color: $white;
+      }
+    }
+  }
+  .left {
+    .hide {
+      display: none;
+    }
+    .dark-container {
+      padding: 0 !important;
+      background: $light-gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      color: $dark;
+      .innerFields {
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  .main {
+    background: $white;
+
+    .verify-content {
+      padding: 20px 40px;
+      min-height: 500px;
+      max-height: 550px;
+      overflow: auto;
+      .record-center {
+        .label {
+          font-size: 1.5rem;
+          font-weight: 600;
+          display: flex;
+          flex-direction: column;
+          align-items: right;
+        }
+        display: flex;
+        flex-direction: column;
+        .columns {
+          .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            img {
+              object-fit: contain;
+              max-height: 200px;
+              min-height: 200px;
+              border: 1px solid $dark-gray;
+            }
+            .field {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 5px 0 10px 0;
+            }
+          }
+        }
+        .is-three-fifths,
+        .is-two-fifths {
+          .print-content {
+            display: grid;
+            flex-grow: 1;
+            grid-template-areas: "leftdiv  right";
+            grid-template-columns: 1fr 1fr;
+
+            .leftdiv {
+              grid-area: leftdiv;
+              display: flex;
+              justify-content: flex-start;
+              border: none;
+              .label {
+                font-size: 1rem;
+                font-weight: 400;
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+                background-color: $white;
+                border-color: none;
+                border: none !important;
+              }
+            }
+            .right {
+              grid-area: right;
+              display: flex;
+              justify-content: flex-start;
+              .label {
+                font-size: 1rem;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+              }
+            }
+          }
+        }
+      }
+      .information {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        .label {
+          font-size: 1.2rem;
+          font-weight: 600;
+          display: flex;
+          flex-direction: column;
+          align-items: right;
+          padding-left: 5px;
+          margin-bottom: 1px;
+        }
+        .title {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+          padding: 5px;
+        }
+        .crime-block {
+          border: 1px solid $dark-gray;
+          padding: 2px;
+          .punishment {
+            border: 1px solid $dark-gray;
+            .label {
+              margin-bottom: 0;
+            }
+            .print-content {
+              display: grid;
+              flex-grow: 1;
+              grid-template-areas: "leftdiv  right left1 right1";
+              grid-template-columns: 150px 1fr 150px 1fr;
+
+              .leftdiv {
+                grid-area: leftdiv;
+                display: flex;
+                justify-content: flex-start;
+                .label {
+                  font-size: 1rem;
+                  font-weight: 400;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: right;
+                }
+              }
+              .right {
+                grid-area: right;
+                display: flex;
+                justify-content: flex-start;
+                .label {
+                  font-size: 1rem;
+                  font-weight: 600;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: right;
+                }
+              }
+              .left1 {
+                grid-area: left1;
+                display: flex;
+                justify-content: flex-start;
+                .label {
+                  font-size: 1rem;
+                  font-weight: 400;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: right;
+                }
+              }
+              .right1 {
+                grid-area: right1;
+                display: flex;
+                justify-content: flex-start;
+                .label {
+                  font-size: 1rem;
+                  font-weight: 600;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: right;
+                }
+              }
+            }
+            .criminal-class {
+              display: grid;
+              flex-grow: 1;
+              grid-template-areas: "leftdiv  right ";
+              grid-template-columns: 1fr 1fr;
+
+              .leftdiv {
+                grid-area: leftdiv;
+                display: flex;
+                justify-content: flex-start;
+                .label {
+                  font-size: 1rem;
+                  font-weight: 400;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: right;
+                }
+              }
+              .right {
+                grid-area: right;
+                display: flex;
+                justify-content: flex-start;
+                .label {
+                  font-size: 1rem;
+                  font-weight: 600;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: right;
+                }
+              }
+            }     
+          }
+        }
+      }
+    }
+    .verify-blank {
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title {
+        // color: $white;
+        font-weight: 400;
+      }
+    }
+    .verify-table {
+      .match-bar {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        padding: 10px;
+        background-color: $dark-gray;
+        min-height: 45px;
+        .title {
+          // color: $white;
+        }
+      }
+      tr.selected {
+        background-color: rgba(210, 220, 227, 0.3);
+      }
+    }
+  }
+}
+html[dir="rtl"] {
+  .Workflow-Wrapper.customsearchverify {
+    .top {
+      .biometrics-top {
+        .start {
+          padding-right: 20px;
+          justify-content: right;
+        }
+        .end {
+          padding-left: 20px;
+          justify-content: flex-end;
+          left: 0;
+          .button {
+            .icon {
+              .fa-arrow-left {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .left {
+      .innerFields {
+        padding-right: 20px;
+      }
+    }
+    .main {
+      direction: rtl !important;
+      .information {
+        .label {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+.bio--container {
+  margin-top: 60px;
+
+  .all-bio-images {
+    display: flex;
+  }
+
+}
+
+.biometric-container {
+  margin-top: 20px;
+  margin-right: 20px;
+
+  a {
+    cursor: pointer;
+  }
+
+  .biometric-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+}
+
+.biometric-sec-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

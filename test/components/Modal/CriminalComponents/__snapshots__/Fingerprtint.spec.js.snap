@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Fingerprtint /> should render without crashing 1`] = `
+<Fingerprtint
+  LeftFingers={
+    Object {
+      "fingers": Array [],
+    }
+  }
+  RightFingers={
+    Object {
+      "fingers": Array [],
+    }
+  }
+  formatMessage={[Function]}
+>
+  <div
+    className="tenprint-fields"
+  >
+    <Label
+      text="fingerprints"
+    >
+      <label
+        className="label"
+        htmlFor=""
+        name=""
+        style={Object {}}
+      >
+        fingerprints
+      </label>
+    </Label>
+    <div
+      className="columns"
+    />
+  </div>
+</Fingerprtint>
+`;

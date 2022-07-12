@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar /> should render without crashing 1`] = `
+<Navbar>
+  <nav
+    aria-label="main navigation"
+    className="navbar"
+    role="navigation"
+  />
+</Navbar>
+`;

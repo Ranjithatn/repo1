@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title /> should render without crashing 1`] = `
+<Title
+  as="h1"
+  is="1"
+>
+  <h1
+    className="title is-1"
+  />
+</Title>
+`;

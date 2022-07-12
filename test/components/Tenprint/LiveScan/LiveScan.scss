@@ -1,0 +1,890 @@
+@import "../../../colors.scss";
+
+
+
+.component--palmContainer {
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+  margin-top: 52px;
+  margin-left: -29px;
+
+  &.right {
+    margin-left: 8px;;
+    .component--lowerPalm { margin-left: 0; margin-right: 10px; }
+  }
+
+  .component--writersPalm {
+    height: 70px;
+    width: 30px;
+    border-radius: 20px;
+    background: #6C7B86;
+    // border: 5px solid $scanWarning;
+  }
+
+
+  .component--lowerPalm {
+    height: 70px;
+    width: 90px;
+    border-radius: 20px;
+    background: #6C7B86;
+    margin-left: 10px;
+    // border: 5px solid $scanWarning;
+  }
+
+  .scanning-finger-empty {
+    border: 5px solid $scanEmpty;
+  }
+  .scanning-finger-success {
+    border: 5px solid $scanSuccess;
+  }
+  .scanning-finger-orange {
+    border: 5px solid $scanWarning;
+  }
+  .scanning-finger-annotated {
+    background: $scanAnnotated;
+    border: 5px solid $scanAnnotated;
+  }
+
+  // @keyframes blinkDiv { 
+  //    50% { border-color: $scanWarning; } 
+  // }
+  // .blinking-border {
+  //   animation: blinkDiv .5s step-end infinite alternate !important;
+  // }
+
+}
+
+
+
+
+.component--loading--wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+
+  .component--loading {
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 150px);
+    width: 300px;
+    background: #FFF;
+    border: 2px solid #000;
+    padding: 20px;
+
+    span {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .loading--inner {
+      margin-top: 5px;
+      position: relative;
+      border: 2px solid green;
+      text-align: center;
+      color: #000;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: green;
+      }
+    }
+
+  }
+
+  .upload--failed {
+    margin-top: 20px;
+    button span {
+      font-size: 18px;
+    }
+  }
+
+}
+
+
+
+.Workflow-Wrapper.livescan-main {
+
+  @keyframes blink { 
+     50% { stroke: $scanWarning; stroke-width: 5px; border-color: transparent; } 
+  }
+
+  .blinking-border {
+    animation: blink .5s step-end infinite alternate;
+  }
+
+
+  .left {
+    .dark-container {
+      padding: 0;
+      border-bottom: 1px solid $dark;
+      border-top: 1px solid $dark;
+      .light {
+        display: flex;
+        padding: 8px;
+        background: $light-gray;
+        .svg {
+          fill: $dark;
+        }
+        span {
+          color: $dark;
+        }
+      }
+      .dark {
+        padding: 8px;
+        display: flex;
+        background: $dark;
+        .svg {
+          fill: $green;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+    .livescan-format-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+      padding: 0 17px;
+      .dropdown-trigger > button {
+        background: transparent;
+        border: none;
+        color: $white;
+      }
+      .dropdown-item {
+        text-align: center;
+        &.is-hoverable:hover {
+          background: $green;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0 5px 5px;
+      .svg {
+        fill: $dark-gray;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      .svgrotate {
+        transform: scaleX(-1);
+        transform-origin: 50% 50%;
+      }
+    }
+    .annotations {
+      display: flex;
+      flex-direction: column;
+      padding: 5px 10px;
+      // align-items: center;
+      // justify-content: center;
+      min-height: 100px;
+      overflow: auto;
+      .annotation-inner {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2px;
+
+        .annote {
+          color: $dark;
+          font-size: 0.8rem !important;
+          font-weight: 600;
+        }
+        .annote_text {
+          display: flex;
+          color: $dark-gray;
+          font-size: 0.8rem !important;
+          font-weight: 600;
+          justify-content: center;
+        }
+
+        textarea {
+          border-radius: 8px;
+        }
+        .is-paddingless:first-child {
+          padding-left: 7px !important;
+          // padding-right: 7px !important;
+        }
+        .is-paddingless:last-child {
+          padding-left: 3px;
+          padding-right: 5px !important;
+        }
+      }
+    }
+    .mugshotHide {
+      display: none;
+    }
+    .mugshot1 {
+      border-bottom: 1px solid $dark;
+      border-top: 1px solid $dark;
+      display: flex;
+      cursor: pointer;
+      min-height: 70px;
+      padding: 35px;
+      min-width: 250px;
+
+      label {
+        padding-left: 25px;
+        cursor: pointer;
+      }
+    }
+    .mugshotadd {
+      border-bottom: 1px solid $dark;
+      border-top: 1px solid $dark;
+      display: flex;
+      cursor: pointer;
+      min-height: 95px;
+
+      min-width: 250px;
+      // flex-grow: 1;
+      display: grid;
+      grid-template-areas: "one two";
+      grid-template-columns: 70px 1fr;
+      .one {
+        grid-area: one;
+        background-color: $green;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        label {
+          padding-left: 0;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+      .two {
+        grid-area: two;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        label {
+          cursor: pointer;
+          padding-left: 0;
+        }
+      }
+      label {
+        padding-left: 25px;
+      }
+    }
+    .mugDark {
+      background: $dark;
+      .icon {
+        color: $green;
+      }
+      label {
+        color: $white;
+      }
+    }
+    .mugLight {
+      .icon {
+        color: $dark;
+      }
+      background: $light-gray;
+    }
+    .lefthand,
+    .righthand {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      .svg-container {
+        flex-grow: 1;
+        display: grid;
+        grid-template-areas:
+          "one two three four five"
+          "middle middle middle middle five"
+          "middle middle middle middle five"
+          "palm palm palm palm five"
+          "palm palm palm palm five";
+        grid-template-columns: 18px 18px 18px 18px 18px;
+        grid-template-rows: 100px;
+      }
+      .selected-finger {
+        fill: $red;
+      }
+      .normal-finger {
+        fill: $dark-gray;
+      }
+      .one {
+        grid-area: one;
+      }
+      .two {
+        grid-area: two;
+      }
+      .three {
+        grid-area: three;
+      }
+      .four {
+        grid-area: four;
+      }
+      .five {
+        grid-area: five;
+      }
+      .middle {
+        grid-area: middle;
+      }
+      .palm {
+        grid-area: palm;
+      }
+
+      .rightpalmove {
+        margin-left: 17px;
+      }
+      .rightlowerpalmove {
+        margin-left: -3px;
+      }
+      .smallfinger {
+        cursor: pointer;
+        transform: translate(0, 37px);
+      }
+      .ringfinger {
+        cursor: pointer;
+        transform: translate(0, 16px);
+      }
+      .middlefinger {
+        cursor: pointer;
+        transform: translate(0, 8px);
+      }
+      .indexfinger {
+        cursor: pointer;
+        transform: translate(0, 15px);
+      }
+      .thumb {
+        cursor: pointer;
+        transform: translate(0, 76px);
+      }
+      .leftupperpalm {
+        cursor: pointer;
+        transform: rotate(90deg) translate(-28px, -30px);
+        transform-origin: 50% 50%;
+      }
+      .leftpalmove {
+        margin-left: -20px;
+      }
+      .leftlowerpalm {
+        cursor: pointer;
+        transform: rotate(90deg) translate(0, -18px);
+        transform-origin: 50% 50%;
+      }
+    }
+    .show {
+      display: flex;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .top {
+    .head {
+      display: flex;
+      flex-grow: 1;
+      display: grid;
+      grid-template-areas: "start center end";
+      grid-template-columns: 1fr 300px 1fr;
+      .start {
+        padding-left: 20px;
+      }
+      .center {
+        grid-area: center;
+        display: flex;
+        justify-content: center;
+        padding: 5px 15px;
+        span {
+          color: $white;
+          font-size: 21px;
+          font-weight: 500;
+        }
+        img {
+          width: 28px;
+          height: 28px;
+          padding-top: 9px;
+          padding-right: 9px;
+        }
+      }
+      .end {
+        grid-area: end;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+      }
+    }
+    .hide {
+      display: none;
+    }
+    .show {
+      display: flex;
+    }
+    .flowStep {
+      padding-left: 5px;
+      color: $white;
+    }
+  }
+  .main {
+    overflow-x: hidden;
+    .columns {
+      display: flex;
+      .column {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .scan-container {
+      padding-top: 2rem;
+      .spancenter {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        padding: 1.5rem;
+      }
+      .img-center {
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+        min-height: 450px;
+      }
+
+      .img-center > img {
+        object-fit: contain;
+        max-height: 400px;
+      }
+    }
+
+    .select-container {
+      display: flex;
+      justify-content: center;
+    }
+    .livescanmaincontent {
+      display: flex;
+      min-height: 100px;
+    }
+
+    .lefthand,
+    .righthand {
+      padding-top: 8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .svg-container {
+        justify-content: center;
+        flex-grow: 1;
+        display: grid;
+        grid-template-areas:
+          "one two three four five"
+          "middle middle middle middle five"
+          "middle middle middle middle five"
+          "palm palm palm palm five"
+          "palm palm palm palm five";
+        grid-template-columns: 35px 35px 35px 35px;
+        grid-template-rows: 160px;
+      }
+      .selected-finger {
+        fill: $red;
+      }
+      .normal-finger {
+        fill: $dark-gray;
+      }
+      .scanning-finger {
+        stroke: $green;
+        fill: $dark-gray;
+        stroke-width: 5px;
+      }
+
+      .scanning-finger-empty {
+        stroke: $scanEmpty;
+        fill: $dark-gray;
+        stroke-width: 5px;
+      }
+      .scanning-finger-orange {
+        stroke: $scanWarning;
+        fill: $dark-gray;
+        stroke-width: 5px;
+      }
+      .scanning-finger-success {
+        stroke: $scanSuccess;
+        fill: $dark-gray;
+        stroke-width: 5px;
+      }
+
+      .scanning-finger-annotated {
+        stroke: $scanAnnotated;
+        fill: $scanAnnotated;
+        stroke-width: 5px;
+      }
+
+
+
+      .warn-finger {
+        stroke: $warn;
+        fill: $warn; //$dark-gray;
+        stroke-width: 5px;
+      }
+      .scanned-finger {
+        fill: $green;
+      }
+      .one {
+        grid-area: one;
+      }
+      .two {
+        grid-area: two;
+      }
+      .three {
+        grid-area: three;
+      }
+      .four {
+        grid-area: four;
+      }
+      .five {
+        grid-area: five;
+      }
+      .middle {
+        grid-area: middle;
+      }
+      .palm {
+        grid-area: palm;
+      }
+
+      .smallfinger {
+        cursor: pointer;
+        transform: translate(0, 65px);
+      }
+      .ringfinger {
+        cursor: pointer;
+        transform: translate(0, 25px);
+      }
+      .middlefinger {
+        cursor: pointer;
+        transform: translate(0, 8px);
+      }
+      .indexfinger {
+        cursor: pointer;
+        transform: translate(0, 23px);
+      }
+      .thumb {
+        cursor: pointer;
+        transform: translate(0, 120px);
+      }
+      .leftupperpalm {
+        cursor: pointer;
+        transform: rotate(90deg) translate(-28px, -59px);
+        transform-origin: 50% 50%;
+      }
+
+      .leftlowerpalm {
+        cursor: pointer;
+        transform: rotate(90deg) translate(25px, -36px);
+        transform-origin: 50% 50%;
+      }
+      .rightupperpalm {
+        cursor: pointer;
+        transform: rotate(90deg) translate(-28px, -95px);
+        transform-origin: 50% 50%;
+      }
+      .leftpalmove {
+        margin-left: -38px;
+      }
+      .rightlowerpalm {
+        cursor: pointer;
+        transform: rotate(90deg) translate(25px, -35px);
+        transform-origin: 50% 50%;
+      }
+    }
+    .livescanscanned {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      .segmented-section {
+        padding: 0 160px;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(120px, 1fr));
+        justify-content: center;
+        min-height: 180px;
+
+        .columns {
+          display: flex;
+          .column {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .is-paddingless {
+          margin: 5px;
+        }
+        .segmented-data-container {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          min-height: 160px;
+          background: $white;
+          cursor: pointer;
+        }
+
+        .impression-name {
+          padding: 8px 0;
+          display: flex;
+          justify-content: center;
+          color: $white;
+        }
+        .segmented-data-container > img {
+          padding: 5px;
+          object-fit: contain;
+          max-height: 150px;
+          cursor: pointer;
+        }
+        .segmented-data-container > span {
+          color: $dark;
+          padding: 5px;
+          display: flex;
+          object-fit: contain;
+          justify-content: center;
+          align-content: center;
+          max-height: 150px;
+        }
+      }
+      .segmented-section3 {
+        padding: 0 160px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        justify-content: center;
+        min-height: 200px;
+        .columns {
+          display: flex;
+          .column {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .is-paddingless {
+          margin: 5px;
+        }
+        .impression-name {
+          padding: 8px 0;
+          display: flex;
+          justify-content: center;
+          color: $white;
+        }
+
+        .segmented-data-container {
+          padding: 10px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          min-height: 180px;
+          background: $white;
+        }
+
+        .segmented-data-container > img {
+          padding: 5px;
+          object-fit: contain;
+          max-height: 165px;
+          cursor: pointer;
+        }
+      }
+
+      .segmented-section4 {
+        padding: 0 160px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+        justify-content: center;
+        min-height: 200px;
+        .columns {
+          display: flex;
+          .column {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .is-paddingless {
+          margin: 5px;
+        }
+        .impression-name {
+          padding: 8px 0;
+          display: flex;
+          justify-content: center;
+          color: $white;
+        }
+
+        .segmented-data-container {
+          padding: 10px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          min-height: 180px;
+          background: $white;
+        }
+
+        .segmented-data-container > img {
+          padding: 5px;
+          object-fit: contain;
+          max-height: 165px;
+          cursor: pointer;
+        }
+      }
+
+
+
+    }
+    .rolled-fingerprints {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      .segmented-section {
+        padding: 0 160px;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(120px, 1fr));
+        justify-content: center;
+        min-height: 180px;
+
+        .columns {
+          display: flex;
+          .column {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .is-paddingless {
+          margin: 5px;
+        }
+        .segmented-data-container {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          min-height: 160px;
+          background: $white;
+          cursor: pointer;
+        }
+
+        .impression-name {
+          padding: 8px 0;
+          display: flex;
+          justify-content: center;
+          color: $white;
+        }
+        .segmented-data-container > img {
+          padding: 5px;
+          object-fit: contain;
+          max-height: 150px;
+        }
+        .segmented-data-container > span {
+          color: $dark;
+          padding: 5px;
+          display: flex;
+          object-fit: contain;
+          justify-content: center;
+          align-content: center;
+          max-height: 150px;
+        }
+      }
+      .segmented-section3 {
+        padding: 0 160px;
+        display: grid;
+        grid-template-columns: 1fr 180px 180px 1fr;
+        justify-content: center;
+        min-height: 200px;
+        .columns {
+          display: flex;
+          .column {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .is-paddingless {
+          margin: 5px;
+        }
+        .impression-name {
+          padding: 8px 0;
+          display: flex;
+          justify-content: center;
+          color: $white;
+        }
+
+        .segmented-data-container {
+          padding: 10px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          min-height: 180px;
+          background: $white;
+        }
+
+        .segmented-data-container > img {
+          padding: 5px;
+          object-fit: contain;
+          max-height: 165px;
+        }
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+    .show {
+      display: flex;
+    }
+  }
+
+  .ShowImg {
+    // display: flex
+  }
+  .hideImg {
+    display: none;
+  }
+}
+html[dir="rtl"] {
+  #content .Workflow-Wrapper .left .dark-container .img-container {
+    direction: ltr;
+    .svg:not(:last-child) {
+      margin-left: calc(-0.375em - 1px);
+      margin-right: 0.1875em;
+    }
+  }
+  #content .Workflow-Wrapper .left .annotations {
+    direction: ltr;
+    .svg:not(:last-child) {
+      margin-left: calc(-0.375em - 1px);
+      margin-right: 0.1875em;
+    }
+  }
+  #content .Workflow-Wrapper .main {
+    direction: ltr;
+    .svg:not(:last-child) {
+      margin-left: calc(-0.375em - 1px);
+      margin-right: 0.1875em;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropdownItem /> should render without crashing 1`] = `
+<DropdownItem>
+  <div
+    className="dropdown-item"
+    style={
+      Object {
+        "zIndex": 65,
+      }
+    }
+  />
+</DropdownItem>
+`;

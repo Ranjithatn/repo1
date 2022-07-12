@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LiveScanLeftContainer /> should render without crashing 1`] = `
+<LeftContainer>
+  <div
+    className="header"
+  />
+  <div
+    className="dark-container"
+  />
+  <div
+    className="mugshot"
+  />
+  <div
+    className="annotations"
+  />
+</LeftContainer>
+`;

@@ -1,0 +1,585 @@
+{
+	"PersonData": {
+		"FingerprintBiometrics": {
+			"FingerprintBiometric": [
+				{
+					"Acceptance": "Valid",
+					"Annotation": {
+						"Info": "",
+						"Reason": "NotAnnotated"
+					},
+					"Attempts": 1,
+					"Children": {
+						"Child": [
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:57:50Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT LEFT INDEX IMAGE",
+									"Format": "BMP",
+									"Height": 458,
+									"ImageUri": "/IMAGE/DOWNLOAD?22a0b0f9-c787-2dd2-5b169cd358c94247",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 91,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 91,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 276
+								},
+								"Impression": "LivescanPlain",
+								"Position": "LeftIndex",
+								"Uuid": "22a0b0f9-c787-2dd2-5b169cd358c94247"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:57:50Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT LEFT MIDDLE HERE",
+									"Format": "BMP",
+									"Height": 519,
+									"ImageUri": "/IMAGE/DOWNLOAD?67e9d23f-4fd5-37d9-91b2bf9f0058f275",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 91,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 91,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 276
+								},
+								"Impression": "LivescanPlain",
+								"Position": "LeftMiddle",
+								"Uuid": "67e9d23f-4fd5-37d9-91b2bf9f0058f275"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:57:50Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT LEFT RIGN HERE",
+									"Format": "BMP",
+									"Height": 489,
+									"ImageUri": "/IMAGE/DOWNLOAD?5ae33b26-f883-f3c1-c7c4eb79a1d8fe7c",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 79,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 79,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 304
+								},
+								"Impression": "LivescanPlain",
+								"Position": "LeftRing",
+								"Uuid": "5ae33b26-f883-f3c1-c7c4eb79a1d8fe7c"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:57:50Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT LEFT LITTLE HERE",
+									"Format": "BMP",
+									"Height": 366,
+									"ImageUri": "/IMAGE/DOWNLOAD?5369296a-3a3d-679a-ac941bec15583c9d",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 91,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 91,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 260
+								},
+								"Impression": "LivescanPlain",
+								"Position": "LeftLittle",
+								"Uuid": "5369296a-3a3d-679a-ac941bec15583c9d"
+							}
+						]
+					},
+					"DateTimeTaken": "2017-12-20T23:57:49Z",
+					"Device": {
+						"Maker": "Cross Match Technologies",
+						"Model": "GUARDIAN 200",
+						"SerialNumber": "005024605.I2016"
+					},
+					"Image": {
+						"Base64Data": "INSERT LEFT FOUR IMAGE",
+						"FingerprintSegmentationInfo": {
+							"DetectedPosition": "LeftFourFingers",
+							"DetectedRegions": 4,
+							"ModuleVersion": {
+								"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+								"Version": "BioCoreExtension Addin Finger Segmentation Aware V2.100784"
+							},
+							"Regions": [
+								{
+									"FingerWidth": 0.5540000200271606,
+									"Height": 458,
+									"SegmentPosition": "LeftIndex",
+									"Width": 276,
+									"X": 1133,
+									"Y": 514
+								},
+								{
+									"FingerWidth": 0.5540000200271606,
+									"Height": 519,
+									"SegmentPosition": "LeftMiddle",
+									"Width": 276,
+									"X": 857,
+									"Y": 283
+								},
+								{
+									"FingerWidth": 0.5839999914169312,
+									"Height": 489,
+									"SegmentPosition": "LeftRing",
+									"Width": 306,
+									"X": 490,
+									"Y": 413
+								},
+								{
+									"FingerWidth": 0.5540000200271606,
+									"Height": 366,
+									"SegmentPosition": "LeftLittle",
+									"Width": 260,
+									"X": 122,
+									"Y": 689
+								}
+							]
+						},
+						"Format": "BMP",
+						"Height": 1500,
+						"ImageUri": "/IMAGE/DOWNLOAD?83a817fc-217f-0ca7-a773b4e98a5a894b",
+						"Quality": {
+							"BestNativeScore": 100,
+							"BioApiScore": 79,
+							"ModuleVersion": {
+								"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+								"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+							},
+							"NativeScore": 79,
+							"WorstNativeScore": 0
+						},
+						"Resolution": 500,
+						"Width": 1600
+					},
+					"Impression": "LivescanPlain",
+					"Position": "LeftFourFingers",
+					"Uuid": "83a817fc-217f-0ca7-a773b4e98a5a894b"
+				},
+				{
+					"Acceptance": "Valid",
+					"Annotation": {
+						"Info": "",
+						"Reason": "NotAnnotated"
+					},
+					"Attempts": 1,
+					"Children": {
+						"Child": [
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:58:09Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT RIGHT INDEX HERE",
+									"Format": "BMP",
+									"Height": 428,
+									"ImageUri": "/IMAGE/DOWNLOAD?c40363c8-751a-e0e4-2ef9403ef87d0c1a",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 91,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 91,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 276
+								},
+								"Impression": "LivescanPlain",
+								"Position": "RightIndex",
+								"Uuid": "c40363c8-751a-e0e4-2ef9403ef87d0c1a"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:58:09Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT RIGht MIDDLE HERE",
+									"Format": "BMP",
+									"Height": 489,
+									"ImageUri": "/IMAGE/DOWNLOAD?ffb7728e-c987-6355-5345674c5a66ce16",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 91,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 91,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 260
+								},
+								"Impression": "LivescanPlain",
+								"Position": "RightMiddle",
+								"Uuid": "ffb7728e-c987-6355-5345674c5a66ce16"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:58:09Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT RIGHT RING HERE",
+									"Format": "BMP",
+									"Height": 473,
+									"ImageUri": "/IMAGE/DOWNLOAD?09559321-a25e-9918-b99440ad07a9867b",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 87,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 87,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 276
+								},
+								"Impression": "LivescanPlain",
+								"Position": "RightRing",
+								"Uuid": "09559321-a25e-9918-b99440ad07a9867b"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:58:09Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT RIGHT LITTLE HERE",
+									"Format": "BMP",
+									"Height": 351,
+									"ImageUri": "/IMAGE/DOWNLOAD?35370173-5c81-1a29-856d175d554907d3",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 91,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 91,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 244
+								},
+								"Impression": "LivescanPlain",
+								"Position": "RightLittle",
+								"Uuid": "35370173-5c81-1a29-856d175d554907d3"
+							}
+						]
+					},
+					"DateTimeTaken": "2017-12-20T23:58:08Z",
+					"Device": {
+						"Maker": "Cross Match Technologies",
+						"Model": "GUARDIAN 200",
+						"SerialNumber": "005024605.I2016"
+					},
+					"Image": {
+						"Base64Data": "INSERT RIGHT FOUR FINGERS HERE",
+						"FingerprintSegmentationInfo": {
+							"DetectedPosition": "RightFourFingers",
+							"DetectedRegions": 4,
+							"ModuleVersion": {
+								"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+								"Version": "BioCoreExtension Addin Finger Segmentation Aware V2.100784"
+							},
+							"Regions": [
+								{
+									"FingerWidth": 0.6159999966621399,
+									"Height": 428,
+									"SegmentPosition": "RightIndex",
+									"Width": 276,
+									"X": 107,
+									"Y": 597
+								},
+								{
+									"FingerWidth": 0.6159999966621399,
+									"Height": 489,
+									"SegmentPosition": "RightMiddle",
+									"Width": 260,
+									"X": 444,
+									"Y": 389
+								},
+								{
+									"FingerWidth": 0.6460000276565552,
+									"Height": 473,
+									"SegmentPosition": "RightRing",
+									"Width": 276,
+									"X": 872,
+									"Y": 505
+								},
+								{
+									"FingerWidth": 0.5379999876022339,
+									"Height": 351,
+									"SegmentPosition": "RightLittle",
+									"Width": 244,
+									"X": 1240,
+									"Y": 964
+								}
+							]
+						},
+						"Format": "BMP",
+						"Height": 1500,
+						"ImageUri": "/IMAGE/DOWNLOAD?28c70312-4336-8297-702361069d643ca6",
+						"Quality": {
+							"BestNativeScore": 100,
+							"BioApiScore": 87,
+							"ModuleVersion": {
+								"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+								"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+							},
+							"NativeScore": 87,
+							"WorstNativeScore": 0
+						},
+						"Resolution": 500,
+						"Width": 1600
+					},
+					"Impression": "LivescanPlain",
+					"Position": "RightFourFingers",
+					"Uuid": "28c70312-4336-8297-702361069d643ca6"
+				},
+				{
+					"Acceptance": "Valid",
+					"Annotation": {
+						"Info": "",
+						"Reason": "NotAnnotated"
+					},
+					"Attempts": 1,
+					"Children": {
+						"Child": [
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:58:19Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT RIGHT THUMB HERE",
+									"Format": "BMP",
+									"Height": 535,
+									"ImageUri": "/IMAGE/DOWNLOAD?a8405ab7-3209-ebd7-29f5998198e51eaf",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 89,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 89,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 352
+								},
+								"Impression": "LivescanPlain",
+								"Position": "RightThumb",
+								"Uuid": "a8405ab7-3209-ebd7-29f5998198e51eaf"
+							},
+							{
+								"Acceptance": "Valid",
+								"Annotation": {
+									"Info": "",
+									"Reason": "NotAnnotated"
+								},
+								"Attempts": 1,
+								"DateTimeTaken": "2017-12-20T23:58:19Z",
+								"Device": {
+									"Maker": "Cross Match Technologies",
+									"Model": "GUARDIAN 200",
+									"SerialNumber": "005024605.I2016"
+								},
+								"Image": {
+									"Base64Data": "INSERT LEFT THUMB HERE",
+									"Format": "BMP",
+									"Height": 535,
+									"ImageUri": "/IMAGE/DOWNLOAD?6da1f7d9-492f-8c94-00cf0fa5a169700b",
+									"Quality": {
+										"BestNativeScore": 100,
+										"BioApiScore": 89,
+										"ModuleVersion": {
+											"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+											"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+										},
+										"NativeScore": 89,
+										"WorstNativeScore": 0
+									},
+									"Resolution": 500,
+									"Width": 352
+								},
+								"Impression": "LivescanPlain",
+								"Position": "LeftThumb",
+								"Uuid": "6da1f7d9-492f-8c94-00cf0fa5a169700b"
+							}
+						]
+					},
+					"DateTimeTaken": "2017-12-20T23:58:19Z",
+					"Device": {
+						"Maker": "Cross Match Technologies",
+						"Model": "GUARDIAN 200",
+						"SerialNumber": "005024605.I2016"
+					},
+					"Image": {
+						"Base64Data": "INSERT BOTH THUMBS HERE",
+						"FingerprintSegmentationInfo": {
+							"DetectedPosition": "BothThumbs",
+							"DetectedRegions": 2,
+							"ModuleVersion": {
+								"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+								"Version": "BioCoreExtension Addin Finger Segmentation Aware V2.100784"
+							},
+							"Regions": [
+								{
+									"FingerWidth": 0.7059999704360962,
+									"Height": 535,
+									"SegmentPosition": "RightThumb",
+									"Width": 352,
+									"X": 964,
+									"Y": 666
+								},
+								{
+									"FingerWidth": 0.7059999704360962,
+									"Height": 535,
+									"SegmentPosition": "LeftThumb",
+									"Width": 352,
+									"X": 214,
+									"Y": 628
+								}
+							]
+						},
+						"Format": "BMP",
+						"Height": 1500,
+						"ImageUri": "/IMAGE/DOWNLOAD?476eaea1-6717-ef2a-6b6b00ddc52ec84f",
+						"Quality": {
+							"BestNativeScore": 100,
+							"BioApiScore": 89,
+							"ModuleVersion": {
+								"Vendor": "CROSS MATCH TECHNOLOGIES (Jena)",
+								"Version": "BioCoreExtension Addin Finger Quality Aware V2.100784"
+							},
+							"NativeScore": 89,
+							"WorstNativeScore": 0
+						},
+						"Resolution": 500,
+						"Width": 1600
+					},
+					"Impression": "LivescanPlain",
+					"Position": "BothThumbs",
+					"Uuid": "476eaea1-6717-ef2a-6b6b00ddc52ec84f"
+				}
+			]
+		}
+	}
+}

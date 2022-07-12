@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<QualityThreshold /> should render without crashing 1`] = `
+<QualityThreshold
+  formatMessage={[Function]}
+>
+  <div>
+    <h1>
+      NFIQQualityThreshold
+    </h1>
+    <div
+      className="input-wrapper"
+    >
+      <label>
+        NFIQQualityThresholdSlap
+      </label>
+      <input
+        className="input"
+        disabled={true}
+        value={0}
+      />
+    </div>
+    <div
+      className="input-wrapper"
+    >
+      <label>
+        NFIQQualityThresholdFlat
+      </label>
+      <input
+        className="input"
+        disabled={true}
+        value={0}
+      />
+    </div>
+  </div>
+</QualityThreshold>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Figure /> should render without crashing 1`] = `
+<Figure>
+  <figure
+    className="image is-undefined"
+  >
+    <img />
+  </figure>
+</Figure>
+`;

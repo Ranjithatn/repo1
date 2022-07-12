@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch /> should render without crashing 1`] = `
+<Switch>
+  <div
+    className="field"
+  >
+    <input
+      className="switch"
+      disabled={false}
+      id=""
+      name=""
+      type="checkbox"
+    />
+    <label
+      htmlFor=""
+    />
+  </div>
+</Switch>
+`;

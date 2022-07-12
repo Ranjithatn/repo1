@@ -1,0 +1,42 @@
+@import "../../../colors.scss";
+#auditlog {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  .internallog-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: $dark-gray;
+    min-height: 45px;
+    .left,
+    .center,
+    .right {
+      flex: 1;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+    .right {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .title {
+      color: $white;
+    }
+  }
+  .textwrap{
+    // word-wrap: break-word;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .table {
+    span {
+      color: $green;
+    }
+  }
+}

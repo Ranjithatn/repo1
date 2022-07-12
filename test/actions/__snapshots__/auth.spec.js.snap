@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions should create REQUEST_CHECK_FOR_APP_UPDATE action 1`] = `
+Object {
+  "payload": undefined,
+  "type": "REQUEST_SHOW_UPDATE_MESSAGE",
+}
+`;
+
+exports[`actions should create login action 1`] = `
+Object {
+  "history": Object {
+    "push": [Function],
+  },
+  "payload": Object {
+    "password": "password",
+    "username": "username",
+  },
+  "type": "REQUEST_LOGIN",
+}
+`;
+
+exports[`actions should create login success action 1`] = `
+Object {
+  "payload": Object {
+    "jwt": "sdfsdergdgdhddh",
+    "roles": "admin",
+  },
+  "type": "REQUEST_LOGIN_SUCCESS",
+}
+`;
+
+exports[`actions should create logout action 1`] = `
+Object {
+  "history": Object {
+    "push": [Function],
+  },
+  "type": "REQUEST_LOGOUT",
+}
+`;
+
+exports[`actions should create logout success action 1`] = `
+Object {
+  "type": "REQUEST_LOGOUT_SUCCESS",
+}
+`;
+
+exports[`actions should create requestSetDownload action 1`] = `
+Object {
+  "payload": "1.0.1",
+  "type": "REQUEST_SET_DOWNLOAD",
+}
+`;
+
+exports[`actions should create requestSetNewUpdate action 1`] = `
+Object {
+  "type": "REQUEST_SET_NEW_UPDATE",
+}
+`;
+
+exports[`actions should create requestShowUpdateMessage action 1`] = `
+Object {
+  "payload": "1.0.1",
+  "type": "REQUEST_SHOW_UPDATE_MESSAGE",
+}
+`;

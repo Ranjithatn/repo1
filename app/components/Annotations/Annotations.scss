@@ -1,0 +1,255 @@
+@import "../../colors.scss";
+
+#Annotations {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 425px;
+  .title,
+  .subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hands {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  #Left-Hand {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px;
+    width: 70px;
+    grid-template-areas:
+      "fingers        fingers     fingers     fingers     thumb"
+      "righterPalm    lowerPalm   lowerPalm   lowerPalm   thumb"
+      "righterPalm    lowerPalm   lowerPalm   lowerPalm   thumb"
+      "righterPalm    lowerPalm   lowerPalm   lowerPalm   thumb"
+      "righterPalm    lowerPalm   lowerPalm   lowerPalm   thumb";
+    grid-gap: 1px;
+
+    // grid-template-areas:
+    //   "fingers        fingers     fingers     fingers     thumb"
+    //   "righterPalm    upperPalm   upperPalm   upperPalm   thumb"
+    //   "righterPalm    upperPalm   upperPalm   upperPalm   thumb"
+    //   "righterPalm    lowerPalm   lowerPalm   lowerPalm   thumb"
+    //   "righterPalm    lowerPalm   lowerPalm   lowerPalm   thumb";
+
+
+  }
+  #Left-Hand button {
+    width: 12px;
+    border: none;
+    background-color: #6C7B86;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  #Left-Hand button.region {
+    border-radius: 10px;
+    border: none;
+    margin: 1px;
+    &.active {
+      background: $red;
+    }
+    &.isAnnotated {
+      background: rgba($red, 0.6);
+    }
+  }
+  .fingers-container {
+    grid-area: fingers;
+    display: flex;
+    align-items: flex-end;
+    width: 56px;
+    #left-little {
+      height: 44px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    #left-ring {
+      height: 67px;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    #left-middle {
+      height: 77px;
+    }
+    #left-index {
+      height: 68px;
+    }
+  }
+
+  .thumb-container {
+    grid-area: thumb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    #left-thumb {
+      height: 43px;
+    }
+  }
+
+  .writer-palm-container {
+    grid-area: righterPalm;
+    display: flex;
+    justify-content: flex-end;
+    button#left-writer-palm {
+      border-radius: 5px;
+      height: 95%; // 100
+      width: 10px;
+      padding: 0;
+    }
+  }
+
+  .upper-palm-container {
+    grid-area: upperPalm;
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    button#left-upper-palm {
+      border-radius: 5px;
+      width: 100%;
+      height: 10px;
+    }
+
+  }
+  .lower-palm-container {
+    grid-area: lowerPalm;
+    margin: 1px;
+    display: flex;
+    width: 100%;
+    button#left-lower-palm {
+      border-radius: 5px;
+      width: 100%;
+      height: 40px; // 25px
+    }
+  }
+
+  #Right-Hand {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px;
+    width: 70px;
+    grid-template-areas:
+      "thumb    fingers      fingers     fingers     fingers"
+      "thumb    lowerPalm    lowerPalm   lowerPalm   righterPalm"
+      "thumb    lowerPalm    lowerPalm   lowerPalm   righterPalm"
+      "thumb    lowerPalm    lowerPalm   lowerPalm   righterPalm"
+      "thumb    lowerPalm    lowerPalm   lowerPalm   righterPalm";
+    grid-gap: 1px;
+
+
+    // grid-template-areas:
+    //   "thumb    fingers      fingers     fingers     fingers"
+    //   "thumb    upperPalm    upperPalm   upperPalm   righterPalm"
+    //   "thumb    upperPalm    upperPalm   upperPalm   righterPalm"
+    //   "thumb    lowerPalm    lowerPalm   lowerPalm   righterPalm"
+    //   "thumb    lowerPalm    lowerPalm   lowerPalm   righterPalm";
+
+  }
+
+  #Right-Hand button {
+    width: 12px;
+    border: none;
+    background-color: #6C7B86;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #Right-Hand button.region {
+    border-radius: 10px;
+    border: none;
+    margin: 1px;
+    &.active {
+      background: $red;
+    }
+    &.isAnnotated {
+      background: rgba($red, 0.6);
+    }
+  }
+
+  .fingers-container {
+    grid-area: fingers;
+    display: flex;
+    align-items: flex-end;
+    width: 56px;
+    #right-little {
+      height: 44px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    #right-ring {
+      height: 67px;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    #right-middle {
+      height: 77px;
+    }
+    #right-index {
+      height: 68px;
+    }
+  }
+
+  .thumb-container {
+    grid-area: thumb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    #right-thumb {
+      height: 43px;
+    }
+  }
+
+  .writer-palm-container {
+    grid-area: righterPalm;
+    display: flex;
+    justify-content: flex-end;
+    button#right-writer-palm {
+      padding: 0;
+      width: 10px;
+      border-radius: 5px;
+      height: 95%; // 100
+    }
+  }
+
+  .upper-palm-container {
+    grid-area: upperPalm;
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    button#right-upper-palm {
+      border-radius: 5px;
+      width: 100%;
+      height: 10px;
+    }
+  }
+
+  .lower-palm-container {
+    grid-area: lowerPalm;
+    margin: 1px;
+    display: flex;
+    width: 100%;
+    button#right-lower-palm {
+      border-radius: 5px;
+      width: 100%;
+      height: 40px; // 25px
+    }
+  }
+
+  .note {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    textarea {
+      resize: none;
+    }
+  }
+.is-primary:disabled  {
+  background-color: rgb(83, 83, 83);
+  border-color: rgba(99, 96, 96, 0);
+}
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`modal actions should create hide modal action 1`] = `
+Object {
+  "type": "REQUEST_HIDE_MODAL",
+}
+`;
+
+exports[`modal actions should create show modal action 1`] = `
+Object {
+  "payload": Object {
+    "modalProps": Object {},
+    "modalType": "ADD_JOB",
+  },
+  "type": "REQUEST_SHOW_MODAL",
+}
+`;

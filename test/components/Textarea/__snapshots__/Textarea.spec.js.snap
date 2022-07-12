@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Textarea /> should render without crashing 1`] = `
+<Textarea>
+  <textarea
+    className="textarea"
+    cols={30}
+    disabled={false}
+    id=""
+    rows={5}
+  />
+</Textarea>
+`;

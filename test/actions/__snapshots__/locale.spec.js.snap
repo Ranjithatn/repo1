@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions should create requestSetLocale action 1`] = `
+Object {
+  "payload": Object {
+    "dir": "rtl",
+    "displayName": "Arabic",
+    "lang": "ar",
+  },
+  "type": "REQUEST_SET_LOCALE",
+}
+`;
+
+exports[`actions should create requestSetLocaleSuccess action 1`] = `
+Object {
+  "payload": Object {
+    "dir": "rtl",
+    "displayName": "Arabic",
+    "lang": "ar",
+  },
+  "type": "REQUEST_SET_LOCALE_SUCCESS",
+}
+`;

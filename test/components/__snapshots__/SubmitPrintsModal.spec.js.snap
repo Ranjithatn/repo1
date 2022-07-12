@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubmitPrintsModal /> should render without crashing 1`] = `
+<Component
+  formatMessage={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "id": "submitPrints",
+          },
+        ],
+        Array [
+          Object {
+            "id": "newAction.searchOptions",
+          },
+        ],
+        Array [
+          Object {
+            "id": "searchCriminalDB",
+          },
+        ],
+        Array [
+          Object {
+            "id": "searchLatentDB",
+          },
+        ],
+        Array [
+          Object {
+            "id": "searchCivilDB",
+          },
+        ],
+        Array [
+          Object {
+            "id": "Submit",
+          },
+        ],
+      ],
+    }
+  }
+  requestHideModal={[MockFunction]}
+  requestInputFieldChanged={[MockFunction]}
+  requestSubmitPrints={[MockFunction]}
+  selectedSearchOption="Search Criminal Database"
+>
+  <Modal
+    buttons={
+      <UNDEFINED>
+        <Button
+          className="is-primary"
+          disabled={false}
+          id="submitPrints-btn"
+          onClick={[Function]}
+          text={undefined}
+        />
+      </UNDEFINED>
+    }
+    className="submitPrints-modal"
+    content={
+      <UNDEFINED>
+        <Title
+          as="h1"
+          is="5"
+          text={undefined}
+        />
+        <Switch
+          checked={true}
+          className="is-primary is-rounded"
+          id="submitPrints-crminalDatabase"
+          onChange={[Function]}
+          text={undefined}
+          value="Search Criminal Database"
+        />
+        <Switch
+          checked={false}
+          className="is-primary is-rounded"
+          id="submitPrints-civilDatabase"
+          onChange={[Function]}
+          text={undefined}
+          value="Search Latent Database"
+        />
+        <Switch
+          checked={false}
+          className="is-primary is-rounded"
+          id="submitPrints-latentDatabase"
+          onChange={[Function]}
+          text={undefined}
+          value="Search Civil Database"
+        />
+      </UNDEFINED>
+    }
+    requestHideModal={[MockFunction]}
+  >
+    <div
+      className="modal is-active submitPrints-modal"
+      style={
+        Object {
+          "zIndex": "50",
+        }
+      }
+    >
+      <div
+        className="modal-background"
+      />
+      <div
+        className="modal-card"
+      >
+        <header
+          className="modal-card-head"
+        >
+          <p
+            className="modal-card-title"
+          />
+          <button
+            aria-label="close"
+            className="delete is-large"
+            name="btn-modal-close"
+            onClick={[MockFunction]}
+          />
+        </header>
+        <section
+          className="modal-card-body"
+        >
+          <Title
+            as="h1"
+            is="5"
+          >
+            <h1
+              className="title is-5"
+            />
+          </Title>
+          <Switch
+            checked={true}
+            className="is-primary is-rounded"
+            id="submitPrints-crminalDatabase"
+            onChange={[Function]}
+            value="Search Criminal Database"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked={true}
+                className="switch is-primary is-rounded"
+                disabled={false}
+                id="submitPrints-crminalDatabase"
+                name="submitPrints-crminalDatabase"
+                onChange={[Function]}
+                type="checkbox"
+                value="Search Criminal Database"
+              />
+              <label
+                htmlFor="submitPrints-crminalDatabase"
+              />
+            </div>
+          </Switch>
+          <Switch
+            checked={false}
+            className="is-primary is-rounded"
+            id="submitPrints-civilDatabase"
+            onChange={[Function]}
+            value="Search Latent Database"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked={false}
+                className="switch is-primary is-rounded"
+                disabled={false}
+                id="submitPrints-civilDatabase"
+                name="submitPrints-civilDatabase"
+                onChange={[Function]}
+                type="checkbox"
+                value="Search Latent Database"
+              />
+              <label
+                htmlFor="submitPrints-civilDatabase"
+              />
+            </div>
+          </Switch>
+          <Switch
+            checked={false}
+            className="is-primary is-rounded"
+            id="submitPrints-latentDatabase"
+            onChange={[Function]}
+            value="Search Civil Database"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked={false}
+                className="switch is-primary is-rounded"
+                disabled={false}
+                id="submitPrints-latentDatabase"
+                name="submitPrints-latentDatabase"
+                onChange={[Function]}
+                type="checkbox"
+                value="Search Civil Database"
+              />
+              <label
+                htmlFor="submitPrints-latentDatabase"
+              />
+            </div>
+          </Switch>
+        </section>
+        <footer
+          className="modal-card-foot"
+        >
+          <Button
+            className="is-primary"
+            disabled={false}
+            id="submitPrints-btn"
+            onClick={[Function]}
+          >
+            <button
+              className="button is-primary"
+              disabled={false}
+              id="submitPrints-btn"
+              onClick={[Function]}
+              style={Object {}}
+              type="button"
+            />
+          </Button>
+        </footer>
+      </div>
+    </div>
+  </Modal>
+</Component>
+`;

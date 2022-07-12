@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavbarDropdown /> should render without crashing 1`] = `
+<NavbarDropdown>
+  <div
+    className="navbar-dropdown"
+  />
+</NavbarDropdown>
+`;

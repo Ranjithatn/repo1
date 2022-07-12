@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerifierWorkflowWrapper /> should render without crashing 1`] = `
+<WorkflowWrapper>
+  <div
+    style={
+      Object {
+        "flexGrow": "1",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      className="Workflow-Wrapper"
+    >
+      <div
+        className="top"
+      />
+      <div
+        className="left"
+      />
+      <div
+        className="main"
+        id="WorkflowWrapper-main"
+      />
+    </div>
+  </div>
+</WorkflowWrapper>
+`;

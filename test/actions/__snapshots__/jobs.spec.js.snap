@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jobs actions requestActiveJobs should create request active jobs action with custom page settings 1`] = `
+Object {
+  "payload": Object {
+    "pageNo": 2,
+    "pageSize": 20,
+  },
+  "type": "REQUEST_ACTIVE_JOBS",
+}
+`;

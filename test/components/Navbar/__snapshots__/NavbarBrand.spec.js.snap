@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavbarBrand /> should render without crashing 1`] = `
+<NavbarBrand>
+  <div
+    className="navbar-brand"
+  >
+    <img
+      alt="logo"
+    />
+  </div>
+</NavbarBrand>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> should render without crashing 1`] = `
+<Select>
+  <div
+    className="select "
+  >
+    <select
+      disabled={false}
+      id=""
+      name=""
+      style={Object {}}
+    >
+      <option
+        selected={true}
+        value=""
+      />
+    </select>
+  </div>
+</Select>
+`;

@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TenprintVerifyLeft should render without crashing 1`] = `
+<Tenprint
+  formatMessage={[Function]}
+>
+  <div
+    className="main-top"
+  >
+    <Button
+      className="is-primary"
+      onClick={[Function]}
+      text="cancel"
+    >
+      <button
+        className="button is-primary"
+        disabled={false}
+        onClick={[Function]}
+        style={Object {}}
+        type="button"
+      >
+        <span>
+          cancel
+        </span>
+      </button>
+    </Button>
+    <Title
+      as="h1"
+      is="4"
+      text="title.tenprintInput"
+    >
+      <h1
+        className="title is-4"
+      >
+        title.tenprintInput
+      </h1>
+    </Title>
+  </div>
+  <div
+    className="main-content"
+  >
+    <div
+      className="tenprint-selection"
+    >
+      <Button
+        className="is-primary is-medium scancard-btn"
+        leftIcon="print"
+        onClick={[Function]}
+        text="scanCard"
+      >
+        <button
+          className="button is-primary is-medium scancard-btn"
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+          type="button"
+        >
+          <Icon
+            icon="print"
+          >
+            <span
+              className="icon"
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+              title=""
+            >
+              <i
+                className="fa fa-print"
+              />
+            </span>
+          </Icon>
+          <span>
+            scanCard
+          </span>
+        </button>
+      </Button>
+         
+      <Button
+        className="is-primary is-medium"
+        leftIcon="hand-paper-o"
+        onClick={[Function]}
+        text="liveScan"
+      >
+        <button
+          className="button is-primary is-medium"
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+          type="button"
+        >
+          <Icon
+            icon="hand-paper-o"
+          >
+            <span
+              className="icon"
+              disabled={false}
+              onClick={[Function]}
+              style={Object {}}
+              title=""
+            >
+              <i
+                className="fa fa-hand-paper-o"
+              />
+            </span>
+          </Icon>
+          <span>
+            liveScan
+          </span>
+        </button>
+      </Button>
+    </div>
+    <Subtitle
+      as="h1"
+      is="5"
+      text="msg.chooseTenprintInput"
+    >
+      <h1
+        className="subtitle is-5"
+      >
+        msg.chooseTenprintInput
+      </h1>
+    </Subtitle>
+  </div>
+</Tenprint>
+`;

@@ -1,0 +1,17 @@
+.addjob-modal footer.modal-card-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addjob-modal textarea {
+  width: 100%;
+  resize: none;
+}
+
+.addjob-modal label {
+  font-weight: 400;
+}
+
+.addjob-modal input {
+  width: auto;
+}

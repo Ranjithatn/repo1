@@ -1,0 +1,66 @@
+@import "../../../colors.scss";
+
+nav.jobqueue-navbar {
+  background-color: $dark-gray;
+  display: flex;
+  align-items: center;
+  color: $white;
+  padding: 0 1rem 0 1rem;
+  .left,
+  .right {
+    flex: 1;
+    .control{
+      display: flex;
+      position: relative;
+      .icon:first-child{
+        position: absolute;
+        z-index: 45;
+        padding: 10px 0 0 5px;
+        color: #4a4a4a !important;
+        cursor: pointer; 
+      }
+      .icon:last-child{
+        position: absolute;
+        z-index: 45;
+        padding: 10px 5px 0 0;
+        color: #4a4a4a !important; 
+        right:0;
+        cursor: pointer;
+      }
+      input[type=text]{
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+  .left {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .select {
+    background-color: $white;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    color: #4a4a4a;
+  }
+  .select select {
+    border-left-color: $white !important;
+  }
+}
+.showFilter {
+  display: block;
+}
+.hideFilter {
+  display: none !important;
+}
+html[dir="rtl"] {
+  nav.jobqueue-navbar {
+    .showFilter {
+      direction: ltr;      
+    }
+  }
+}

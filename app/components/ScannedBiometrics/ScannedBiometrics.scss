@@ -1,0 +1,314 @@
+@import "../../colors.scss";
+
+.Workflow-Wrapper.scanned-biometrics {
+  .top {
+    .biometrics-top {
+      display: flex;
+      flex-grow: 1;
+      display: grid;
+      grid-template-areas: "start center end";
+      grid-template-columns: 1fr 300px 1fr;
+      // padding: 10px;
+      // background-color: $dark-gray;
+      // min-height: 45px;
+      .start {
+        grid-area: start;
+        padding-left: 20px;
+      }
+      .center {
+        grid-area: center;
+        display: flex;
+        justify-content: center;
+      }
+      .end {
+        grid-area: end;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-end;
+      }
+
+      .title {
+        color: $white;
+      }
+    }
+  }
+  .left {
+    .hide {
+      display: none;
+    }
+    .dark-container {
+      padding: 0;
+      border-bottom: 1px solid $dark;
+      border-top: 1px solid $dark;
+      cursor: pointer;
+      .light {
+        display: flex;
+        padding: 8px;
+        background: $light-gray;
+        width: 100%;
+        .svg {
+          fill: $dark;
+        }
+        span {
+          color: $dark;
+        }
+      }
+      .dark {
+        padding: 8px;
+        display: flex;
+        background: $dark;
+        width: 100%;
+        .svg {
+          fill: $green;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+    .livescan-format-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      font-weight: 500;
+    }
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0 5px 5px;
+
+      .svg {
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      .svgrotate {
+        transform: scaleX(-1);
+        transform-origin: 50% 50%;
+      }
+    }
+    .mugshot1 {
+      border-bottom: 1px solid $dark;
+      display: flex;
+      cursor: pointer;
+      min-height: 70px;
+      padding: 35px;
+      min-width: 250px;
+      label {
+        padding-left: 25px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .mugDark {
+      background: $dark;
+      .icon {
+        color: $green;
+      }
+      label {
+        color: $white;
+      }
+    }
+    .mugLight {
+      .icon {
+        color: $dark;
+      }
+      background: $light-gray;
+    }
+    .palm {
+      display: flex;
+      min-height: 100px;
+      border-bottom: 1px solid $dark;
+      cursor: pointer;
+      .light {
+        display: flex;
+        padding: 8px;
+        background: $light-gray;
+        width: 100%;
+        .svg {
+          fill: $dark;
+        }
+        span {
+          color: $dark;
+        }
+      }
+      .dark {
+        padding: 8px;
+        display: flex;
+        background: $dark;
+        width: 100%;
+        .svg {
+          fill: $green;
+        }
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+  .main {
+    .hide {
+      display: none;
+    }
+    .grid-5fingers {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10px;
+      padding: 10px;
+
+      .segmented-print-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+      }
+      .segmented-print-container > span {
+        color: $dark;
+        margin: 10px;
+      }
+      .segmented-print {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $white;
+        cursor: pointer;
+        padding-top: 20px;
+      }
+    }
+    .grid-3fingers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10px;
+      padding: 0 10px 10px 10px;
+
+      .segmented-print-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $white;
+      }
+      .segmented-print-container > span {
+        color: $dark;
+        margin: 10px;
+      }
+      .segmented-print {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $white;
+        cursor: pointer;
+      }
+      .segmented-print > img {
+        object-fit: contain;
+        min-height: 150px;
+      }
+    }
+    .grid-4fingers {
+      display: grid;
+      grid-template-columns: 1fr 180px 180px 1fr;
+      grid-gap: 10px;
+      padding: 0 10px 10px 10px;
+
+      .segmented-print-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+      }
+      .segmented-print-container > span {
+        color: $dark;
+        margin: 10px;
+      }
+      .segmented-print {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $white;
+        cursor: pointer;
+        padding-top: 20px;
+      }
+      .segmented-print > img {
+        object-fit: contain;
+        min-height: 150px;
+      }
+    }
+    .grid-image {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      padding: 10px;
+
+      .segmented-print-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .segmented-print {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $white;
+        cursor: pointer;
+      }
+    }
+    .scan-container {
+      padding-top: 2rem;
+      .spancenter {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        padding: 1.5rem;
+      }
+      .img-center {
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+        min-height: 450px;
+      }
+
+      .img-center > img {
+        object-fit: contain;
+        max-height: 600px;
+      }
+    }
+  }
+}
+html[dir="rtl"] {
+  .Workflow-Wrapper.scanned-biometrics {
+    .top {
+      .biometrics-top {
+        .end {
+          direction: ltr;
+          justify-content: flex-start;
+          .button {
+            .icon {
+              .fa-arrow-left {
+                padding-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

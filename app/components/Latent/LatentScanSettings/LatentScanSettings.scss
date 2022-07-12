@@ -1,0 +1,44 @@
+@import "../../../colors.scss";
+
+#latent {
+  .main-top {
+    display: flex;
+    align-items: center;
+    justify-content: enter;
+    padding: 10px;
+    background-color: $dark-gray;
+    min-height: 45px;
+    button {
+      position: absolute;
+    }
+    .title {
+      color: $white;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .config-contents {
+    flex-grow: 1;
+    background-color: $dark;
+    padding-top: 5%;
+    overflow: auto;
+    .cardscan-config-fields {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      label {
+        color: $white;
+        font-weight: 400;
+      }
+      button {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    .subtitle {
+      color: $white;
+    }
+  }
+}

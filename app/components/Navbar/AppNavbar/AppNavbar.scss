@@ -1,0 +1,78 @@
+@import "../../../colors.scss";
+
+nav.app-navbar {
+  background-color: $dark;
+  color: $white;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  .left,
+  .center,
+  .right {
+    flex: 1;
+  }
+  .left > img {
+    // width: 75px;
+    // height: 75px;
+    position: absolute;
+    top: -10px;
+    z-index: 1;
+    cursor: pointer;
+
+    width: 60px;
+    height: 60px;
+    margin-top: 3px;
+
+
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    .dropdown-menu {
+      min-width: 100%;
+      padding-top: 0;
+    }
+    .dropdown-menu .dropdown-content {
+      background-color: $dark;
+    }
+    .dropdown-menu .dropdown-content .dropdown-item {
+      color: $white;
+      text-align: center;
+      &:hover {
+        background-color: $green;
+        cursor: pointer;
+      }
+    }
+    .dropdown-trigger > button {
+      background-color: transparent;
+      border: none;
+      color: $white;
+      min-height: 50px;
+    }
+  }
+}
+
+html[dir=rtl] {
+  nav.app-navbar {
+    // direction: ltr;
+    .button .icon:first-child:not(:last-child) {
+      margin-left: calc(-0.375em - 1px);
+      margin-right: 0.1875em;
+      margin-left:  8px;
+    }
+  }
+}
+
+.language-selector-switch {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 20px;
+  line-height: 100%;
+  cursor: pointer;
+}
+

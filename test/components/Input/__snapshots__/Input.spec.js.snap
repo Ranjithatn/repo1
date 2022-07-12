@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should render without crashing 1`] = `
+<Input>
+  <div
+    className="control"
+    style={Object {}}
+  >
+    <input
+      disabled={false}
+      onKeyPress={[Function]}
+      style={Object {}}
+      type="text"
+    />
+  </div>
+</Input>
+`;

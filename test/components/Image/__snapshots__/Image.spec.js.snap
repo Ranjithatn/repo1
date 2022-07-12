@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> should render without crashing 1`] = `
+<Image>
+  <img
+    className="img"
+    style={Object {}}
+  />
+</Image>
+`;

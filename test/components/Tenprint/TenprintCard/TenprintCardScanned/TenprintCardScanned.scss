@@ -1,0 +1,71 @@
+@import "../../../../colors.scss";
+
+.Workflow-Wrapper.tenprint-card-scanned {
+  .top {
+    padding-left: 10px;
+    padding-right: 10px;
+    .title {
+      color: $white;
+      margin: 0;
+      flex-grow: 1;
+      text-align: center;
+    }
+  }
+  .left {
+    .selected-card-title {
+      font-weight: 300;
+      padding-bottom: 10px;
+    }
+    .tenprint-format-container {
+      text-align: center;
+      flex-grow: 1;
+    }
+  }
+  .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .progress {
+      width: 500px;
+    }
+  }
+  // .tenprint-format-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   flex-grow: 1;
+  //   .dropdown-trigger>button {
+  //     background: transparent;
+  //     border: none;
+  //     color: white;
+  //   }
+  //   .dropdown-item {
+  //     text-align: center;
+  //     &.is-hoverable:hover {
+  //       background: $green;
+  //       color: $white;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+  // .img-format-container {
+  //   padding: 5px;
+  //   display: flex;
+  //   background: $dark;
+  //   color: $white;
+  //   font-size: 15px;
+  // }
+  // .img-container {
+  //   height: 90px;
+  //   width: 90px;
+  //   background: $white;
+  // }
+  // .foot {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   .progress {
+  //     width: 500px;
+  //   }
+  // }
+}

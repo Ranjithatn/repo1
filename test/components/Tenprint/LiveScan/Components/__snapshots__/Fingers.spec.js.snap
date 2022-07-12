@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Fingers /> should render without crashing 1`] = `
+<Component>
+  <SVG
+    className="one smallfinger undefined"
+    d="M 12.9799 -9.03782e-07C 20.1448 -9.03782e-07 25.9597 7.18409 25.9597 13.0145L 25.9597 100.963C 25.9597 108.147 20.1542 113.978 12.9799 113.978C 5.81489 113.978 -1.67984e-06 106.794 -1.67984e-06 100.963L -1.67984e-06 13.0145C -1.67984e-06 5.83041 5.8055 -9.03782e-07 12.9799 -9.03782e-07Z"
+    height="180"
+    viewBox="-5 0 38 165"
+    width="35"
+  >
+    <svg
+      height="180"
+      viewBox="-5 0 38 165"
+      width="35"
+    >
+      <path
+        className="svg one smallfinger undefined"
+        d="M 12.9799 -9.03782e-07C 20.1448 -9.03782e-07 25.9597 7.18409 25.9597 13.0145L 25.9597 100.963C 25.9597 108.147 20.1542 113.978 12.9799 113.978C 5.81489 113.978 -1.67984e-06 106.794 -1.67984e-06 100.963L -1.67984e-06 13.0145C -1.67984e-06 5.83041 5.8055 -9.03782e-07 12.9799 -9.03782e-07Z"
+      />
+    </svg>
+  </SVG>
+</Component>
+`;
+
+exports[`<Fingers /> should render without crashing 2`] = `
+<Component>
+  <SVG
+    className="two ringfinger undefined"
+    d="M 12.9799 0C 20.1448 0 25.9597 7.18409 25.9597 13.0145L 25.9597 141.854C 25.9597 149.038 20.1542 154.869 12.9799 154.869C 5.81489 154.869 0 147.684 0 141.854L 0 13.0145C 0 5.83041 5.80549 0 12.9799 0Z"
+    height="180"
+    viewBox="-5 0 38 168"
+    width="35"
+  >
+    <svg
+      height="180"
+      viewBox="-5 0 38 168"
+      width="35"
+    >
+      <path
+        className="svg two ringfinger undefined"
+        d="M 12.9799 0C 20.1448 0 25.9597 7.18409 25.9597 13.0145L 25.9597 141.854C 25.9597 149.038 20.1542 154.869 12.9799 154.869C 5.81489 154.869 0 147.684 0 141.854L 0 13.0145C 0 5.83041 5.80549 0 12.9799 0Z"
+      />
+    </svg>
+  </SVG>
+</Component>
+`;
+
+exports[`<Fingers /> should render without crashing 3`] = `
+<Component>
+  <SVG
+    className="three middlefinger undefined"
+    d="M 12.9799 0C 20.1448 0 25.9597 7.18409 25.9597 13.0145L 25.9597 158.816C 25.9597 166 20.1542 171.83 12.9799 171.83C 5.81489 171.83 0 164.646 0 158.816L 0 13.0145C 0 5.83041 5.80549 0 12.9799 0Z"
+    height="180"
+    viewBox="-5 0 38 168"
+    width="35"
+  >
+    <svg
+      height="180"
+      viewBox="-5 0 38 168"
+      width="35"
+    >
+      <path
+        className="svg three middlefinger undefined"
+        d="M 12.9799 0C 20.1448 0 25.9597 7.18409 25.9597 13.0145L 25.9597 158.816C 25.9597 166 20.1542 171.83 12.9799 171.83C 5.81489 171.83 0 164.646 0 158.816L 0 13.0145C 0 5.83041 5.80549 0 12.9799 0Z"
+      />
+    </svg>
+  </SVG>
+</Component>
+`;
+
+exports[`<Fingers /> should render without crashing 4`] = `
+<Component>
+  <SVG
+    className="four indexfinger undefined"
+    d="M 12.9799 0C 20.1448 0 25.9597 7.18409 25.9597 13.0145L 25.9597 144.277C 25.9597 151.461 20.1542 157.292 12.9799 157.292C 5.81489 157.292 0 150.108 0 144.277L 0 13.0145C 0 5.83041 5.80549 0 12.9799 0Z"
+    height="180"
+    viewBox="-5 0 38 168"
+    width="35"
+  >
+    <svg
+      height="180"
+      viewBox="-5 0 38 168"
+      width="35"
+    >
+      <path
+        className="svg four indexfinger undefined"
+        d="M 12.9799 0C 20.1448 0 25.9597 7.18409 25.9597 13.0145L 25.9597 144.277C 25.9597 151.461 20.1542 157.292 12.9799 157.292C 5.81489 157.292 0 150.108 0 144.277L 0 13.0145C 0 5.83041 5.80549 0 12.9799 0Z"
+      />
+    </svg>
+  </SVG>
+</Component>
+`;
+
+exports[`<Fingers /> should render without crashing 5`] = `
+<Component>
+  <SVG
+    className="five thumb undefined"
+    d="M 13.4654 0C 20.6344 0 26.4415 7.18813 26.4415 13.0107L 25.9522 81.2798C 25.9522 88.468 20.1448 94.2905 12.9761 94.2905C 5.8071 94.2905 0 87.1024 0 81.2798L 0.489296 13.0107C 0.489296 5.8226 6.29666 0 13.4654 0Z"
+    height="250"
+    viewBox="-5 0 38 200"
+    width="35"
+  >
+    <svg
+      height="250"
+      viewBox="-5 0 38 200"
+      width="35"
+    >
+      <path
+        className="svg five thumb undefined"
+        d="M 13.4654 0C 20.6344 0 26.4415 7.18813 26.4415 13.0107L 25.9522 81.2798C 25.9522 88.468 20.1448 94.2905 12.9761 94.2905C 5.8071 94.2905 0 87.1024 0 81.2798L 0.489296 13.0107C 0.489296 5.8226 6.29666 0 13.4654 0Z"
+      />
+    </svg>
+  </SVG>
+</Component>
+`;

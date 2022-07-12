@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TeprintCardContent /> should render without crashing 1`] = `
+<div
+  className="cardscan-rebox"
+  onMouseDown={[Function]}
+  onMouseMove={[Function]}
+  onMouseUp={[Function]}
+  style={Object {}}
+>
+  <div
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <img
+      alt="scanned card"
+      className="cardscan-img"
+      id="cardscan-img"
+      onLoad={[Function]}
+      src="b64 image"
+    />
+  </div>
+</div>
+`;

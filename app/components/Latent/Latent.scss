@@ -1,0 +1,71 @@
+@import "../../colors.scss";
+#latent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  .latent-top {
+    display: flex;
+    align-items: center;
+    justify-content: enter;
+    padding: 10px;
+    background-color: $dark-gray;
+    min-height: 45px;
+    .left,
+    .center,
+    .right {
+      flex: 1;
+    }
+    .center{
+      // display: flex;
+      justify-content: center;
+    }
+    .right{
+      display: flex;
+      justify-content: flex-end;
+    }
+    button {
+      // position: absolute;
+    }
+    .title {
+      color: $white;
+      // margin-right: auto;
+      // margin-left: auto;
+    }
+  }
+  .latent-content {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    background-color: $dark;
+    padding-top: 15%;
+    overflow: auto;
+    .latent-selection {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .subtitle {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      color: $white;
+    }
+  }
+}
+
+html[dir="rtl"] {
+  #latent {
+    .latent-top {
+      .right{
+        justify-content: flex-start;
+        direction: ltr;
+        .button {
+          .icon {
+            .fa-arrow-left {
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../colors.scss";
+#tenprint {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  .main-top {
+    display: flex;
+    align-items: center;
+    justify-content: enter;
+    padding: 10px;
+    background-color: $dark-gray;
+    min-height: 45px;
+    button {
+      position: absolute;
+    }
+    .title {
+      color: $white;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .main-content {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    background-color: $dark;
+    padding-top: 8%;
+    overflow: auto;
+    .tenprint-selection {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .subtitle {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      color: $white;
+    }
+  }
+}
+// .Workflow-Wrapper.tenprint-main {
+//   .left {
+//     // .left-heading {
+//     //   display: flex;
+//     //   align-items: center;
+//     //   padding: 0 .75rem 0 .75rem;
+//     //   height: 80px;
+//     //   font-size: 26px;
+//     // }
+//     .tenprint-format-container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       flex-grow: 1;
+//       .dropdown-trigger>button {
+//         background: transparent;
+//         border: none;
+//         color: white;
+//       }
+//       .dropdown-item {
+//         text-align: center;
+//         &.is-hoverable:hover {
+//           background: $green;
+//           color: $white;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//     .img-format-container {
+//       padding: 5px;
+//       display: flex;
+//       background: $dark;
+//       color: $white;
+//       font-size: 15px;
+//     }
+//     .img-container {
+//       height: 90px;
+//       width: 90px;
+//       background: $white;
+//     }
+//   }
+//   .main {
+//     .main-container {
+//       .msg {
+//         .subtitle {
+//           color: $white;
+//         }
+//         text-align: center;
+//       }
+//       .buttons {
+//         display: flex;
+//         justify-content: center;
+//         padding-top: 5rem;
+//       }
+//       .cardscan-link {
+//         padding-right: 15%;
+//       }
+//     }
+//   }
+// }

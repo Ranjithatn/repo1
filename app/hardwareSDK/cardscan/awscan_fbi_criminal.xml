@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Aware AccuScan configuration data for FBI Criminal card --> 
+
+<AccuScan>
+
+   <Units> Inches </Units>
+
+   <ScanArea>
+       <Page>     1 </Page>
+       <Top>    3.0 </Top>
+       <Left>   0.0 </Left>
+       <Height> 5.0 </Height>
+       <Width>  8.0 </Width>       
+   </ScanArea>   
+
+   <!-- Right Rolled Thumb -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    1 </Index>
+       <Top>    0.0 </Top>
+       <Left>   0.0 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Right Rolled Index Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    2 </Index>
+       <Top>    0.0 </Top>
+       <Left>   1.6 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Right Rolled Middle Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    3 </Index>
+       <Top>    0.0 </Top>
+       <Left>   3.2 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Right Rolled Ring Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    4 </Index>
+       <Top>    0.0 </Top>
+       <Left>   4.8 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Right Rolled Little Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    5 </Index>
+       <Top>    0.0 </Top>
+       <Left>   6.4 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Left Rolled Thumb -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    6 </Index>
+       <Top>    1.5 </Top>
+       <Left>   0.0 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Left Rolled Index Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    7 </Index>
+       <Top>    1.5 </Top>
+       <Left>   1.6 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Left Rolled Middle Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    8 </Index>
+       <Top>    1.5 </Top>
+       <Left>   3.2 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Left Rolled Ring Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>    9 </Index>
+       <Top>    1.5 </Top>
+       <Left>   4.8 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Left Rolled Little Finger -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>   10 </Index>
+       <Top>    1.5 </Top>
+       <Left>   6.4 </Left>
+       <Height> 1.5 </Height>
+       <Width>  1.6 </Width>
+   </CropRegion>
+
+   <!-- Left Slap -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>   14 </Index>
+       <Top>    3.0 </Top>
+       <Left>   0.0 </Left>
+       <Height> 2.0 </Height>
+       <Width>  3.2 </Width>
+   </CropRegion>
+
+   <!-- Left Plain Thumb -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>   12 </Index>
+       <Top>    3.0 </Top>
+       <Left>   3.2 </Left>
+       <Height> 2.0 </Height>
+       <Width>  0.8 </Width>
+   </CropRegion>
+
+   <!-- Right Plain Thumb -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>   11 </Index>
+       <Top>    3.0 </Top>
+       <Left>   4.0 </Left>
+       <Height> 2.0 </Height>
+       <Width>  0.8 </Width>
+   </CropRegion>
+
+   <!-- Right Slap -->
+   <CropRegion>
+       <Page>     1 </Page>
+       <Index>   13 </Index>
+       <Top>    3.0 </Top>
+       <Left>   4.8 </Left>
+       <Height> 2.0 </Height>
+       <Width>  3.2 </Width>
+   </CropRegion>
+
+</AccuScan>

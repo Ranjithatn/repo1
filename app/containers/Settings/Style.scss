@@ -1,0 +1,18 @@
+
+.component--settings-content {
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: row;
+    label {
+      width: 350px !important;
+    }
+  }
+
+  button[disabled].config-save-button {
+    background-color: #6c7b86 !important;
+  }
+
+}
+
+

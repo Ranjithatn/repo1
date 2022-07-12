@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> should render without crashing 1`] = `
+<Dropdown>
+  <div
+    className="dropdown is-hoverable"
+    onClick={[Function]}
+  >
+    <div
+      className="dropdown-trigger"
+    >
+      <button
+        aria-controls="dropdown-menu4"
+        aria-haspopup="true"
+        className="button"
+      >
+        <span />
+        <span
+          className="icon is-small"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-angle-down"
+          />
+        </span>
+      </button>
+    </div>
+    <div
+      className="dropdown-menu"
+      role="menu"
+      style={
+        Object {
+          "zIndex": 55,
+        }
+      }
+    >
+      <div
+        className="dropdown-content"
+      />
+    </div>
+  </div>
+</Dropdown>
+`;

@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<JobAuditLogModal /> should render without crashing 1`] = `
+<Component
+  formatMessage={[Function]}
+>
+  <Modal
+    buttons={
+      <UNDEFINED>
+        <Button
+          className="is-primary"
+          id="newAction-btn"
+          onClick={[Function]}
+          text="close"
+        />
+      </UNDEFINED>
+    }
+    className="newAction-modal"
+    content={
+      <UNDEFINED>
+        <Title
+          as="h1"
+          is="5"
+          text="desc"
+        />
+        <span />
+      </UNDEFINED>
+    }
+    title="Log Details"
+  >
+    <div
+      className="modal is-active newAction-modal"
+      style={
+        Object {
+          "zIndex": "50",
+        }
+      }
+    >
+      <div
+        className="modal-background"
+      />
+      <div
+        className="modal-card"
+      >
+        <header
+          className="modal-card-head"
+        >
+          <p
+            className="modal-card-title"
+          >
+            Log Details
+          </p>
+          <button
+            aria-label="close"
+            className="delete is-large"
+            name="btn-modal-close"
+          />
+        </header>
+        <section
+          className="modal-card-body"
+        >
+          <Title
+            as="h1"
+            is="5"
+            text="desc"
+          >
+            <h1
+              className="title is-5"
+            >
+              desc
+            </h1>
+          </Title>
+          <span />
+        </section>
+        <footer
+          className="modal-card-foot"
+        >
+          <Button
+            className="is-primary"
+            id="newAction-btn"
+            onClick={[Function]}
+            text="close"
+          >
+            <button
+              className="button is-primary"
+              disabled={false}
+              id="newAction-btn"
+              onClick={[Function]}
+              style={Object {}}
+              type="button"
+            >
+              <span>
+                close
+              </span>
+            </button>
+          </Button>
+        </footer>
+      </div>
+    </div>
+  </Modal>
+</Component>
+`;

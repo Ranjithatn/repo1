@@ -1,0 +1,481 @@
+@import "../../../colors.scss";
+
+.criminal-record-modal footer.modal-card-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-criminal-modal {
+  .modal-card {
+    width: 800px !important;
+    min-height: 600px !important;
+  }
+  .modal-card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .record-center {
+    display: flex;
+    flex-direction: column;
+
+    .upper-margin {
+      margin: 0;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      padding: 5px 0;
+    }
+    .file-content {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      .filetext {
+        padding-top: 10px;
+        font-size: 0.95rem;
+      }
+    }
+    .columns {
+      padding-left: 15px;
+      .column {
+        display: flex;
+        .img-block {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          img {
+            object-fit: contain;
+            max-height: 150px;
+            min-height: 150px;
+          }
+        }
+        .title {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+          padding: 5px 0;
+        }
+        .control {
+          width: 100% !important;
+          .label {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 5px;
+            font-size: 0.8rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .is-one-fifth {
+        padding-top: 28px !important;
+      }
+    }
+  }
+  .criminal-fields {
+    margin: 5px 0;
+    border-radius: 1px;
+    border: 1px solid $dark-gray;
+    .label {
+      margin: 5px;
+      padding-left: 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .file-content{
+      padding: 5px;
+      .control{
+        width: 60% !important;
+      }
+    }
+    .space-fill {
+      padding: 5px;
+    }
+    .case-content {
+      margin: 5px;
+      border-radius: 1px;
+      border: 1px solid $dark-gray;
+      .case-field {
+        display: grid;
+        border-bottom: 1px solid $dark-gray;
+        grid-template-columns: 200px 1fr 35px;
+        grid-gap: 10px;
+        padding: 5px;
+        .select {
+          width: 100% !important;
+          min-width: 100% !important;
+          max-width: 100% !important;
+        }
+        select {
+          width: 100% !important;
+          min-width: 100% !important;
+          max-width: 100% !important;
+        }
+        .button {
+          margin-right: 18px;
+        }
+      }
+      .case-field:last-child {
+        display: grid;
+        border-bottom: none;
+        grid-template-columns: 200px 1fr 35px;
+        grid-gap: 10px;
+        padding: 5px;
+      }
+      .span-head {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        width: 100%;
+        align-items: center;
+        padding: 4px 0;
+      }
+      .icon-div {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icon {
+          color: $green;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .columns {
+      margin: 0;
+      padding-left: 0;
+      .is-one-fifth {
+        display: flex;
+        align-items: center;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 10px;
+        .label {
+          font-size: 0.9rem;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-top: 5px;
+          margin-bottom: 0;
+        }
+        .field {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 5px 0 0 0;
+          width: 85% !important;
+          .div-check {
+            display: flex;
+            margin-top: 25px;
+
+            .mycheckbox {
+              margin-left: 20px;
+              // font-size: 20px;
+            }
+          }
+        }
+        .select {
+          width: 100% !important;
+          min-width: 100% !important;
+          max-width: 100% !important;
+        }
+        select {
+          width: 100% !important;
+          min-width: 100% !important;
+          max-width: 100% !important;
+        }
+        .textareafield {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-top: 5px;
+          width: 100%;
+        }
+      }
+    }
+
+    //Punishment Page
+    .punishment-block {
+      padding: 5px;
+      padding-bottom: 10px;
+      // background: #c4c4c4;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .control {
+        width: 100% !important;
+        padding-top: 10px;
+        font-size: 0.9rem;
+        font-weight: 300;
+        // display: flex;
+        align-items: center;
+        input[type="checkbox"] {
+          width: 22px; /*Desired width*/
+          height: 22px; /*Desired height*/
+        }
+      }
+      .control-checkbox {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 30px 1fr;
+      }
+      .label {
+        font-weight: 600 !important;
+        padding: 0 !important;
+        font-size: 1rem !important;
+        color: black;
+      }
+      .dayselector-left {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 120px 190px;
+        .label {
+          font-size: 0.8rem !important;
+        }
+        .parts {
+          display: grid;
+          grid-template-columns: 60px 60px 60px;
+          grid-gap: 5px;
+          .part-fields {
+            display: flex;
+            flex-direction: column;
+            .label {
+              font-size: 0.7rem !important;
+              font-weight: 200 !important;
+            }
+            input[type="checkbox"] {
+              width: 20px; /*Desired width*/
+              height: 20px; /*Desired height*/
+            }
+            span {
+              font-size: 0.7rem;
+              font-weight: 300;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+        .label-text {
+          // padding-left: 10px;
+          display: flex;
+          align-items: flex-start;
+          padding-top: 12px;
+        }
+        .label-text-bot {
+          // padding-left: 10px;
+          padding-top: 10px;
+          display: flex;
+          align-items: flex-start;
+          .label {
+            padding-right: 15px;
+          }
+        }
+        .control {
+          width: 100% !important;
+          padding-top: 10px;
+          font-size: 0.9rem;
+          font-weight: 300;
+          // display: flex;
+          align-items: center;
+          .single {
+            width: 22px; /*Desired width*/
+            height: 22px; /*Desired height*/
+          }
+        }
+      }
+      .dayselector-right {
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        grid-template-columns: 130px 190px 80px;
+        .label {
+          font-size: 0.8rem !important;
+        }
+        .parts {
+          display: grid;
+          grid-template-columns: 60px 60px 60px;
+          grid-gap: 5px;
+          .part-fields {
+            display: flex;
+            flex-direction: column;
+            .label {
+              font-size: 0.7rem !important;
+              font-weight: 200 !important;
+            }
+            input[type="checkbox"] {
+              width: 22px; /*Desired width*/
+              height: 22px; /*Desired height*/
+            }
+            span {
+              font-size: 0.7rem;
+              font-weight: 300;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+        .label-text {
+          display: flex;
+          align-items: flex-start;
+          padding-top: 14px;
+        }
+        .label-text-bot {
+          // padding-left: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .label {
+            padding-right: 15px;
+          }
+        }
+        .label-text-bot-input {
+          padding-top: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .label {
+            padding-right: 15px;
+          }
+        }
+        .label-text-final {
+          padding-left: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          .label {
+            padding-right: 15px;
+          }
+          input[type="checkbox"] {
+            width: 22px; /*Desired width*/
+            height: 22px; /*Desired height*/
+          }
+        }
+        .control {
+          width: 100% !important;
+          padding-top: 10px;
+          font-size: 0.9rem;
+          font-weight: 300;
+          display: flex;
+          align-items: center;
+          .single {
+            width: 30px; /*Desired width*/
+            height: 30px; /*Desired height*/
+          }
+        }
+      }
+      .is-three-fifths {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+    //criminal data page
+    .crime-data{
+      margin: 5px;
+      border-radius: 1px;
+      border: 1px solid $dark-gray;
+    }
+  }
+
+  //Fingerprints page
+  .tenprint-fields {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid $dark-gray;
+    padding: 10px;
+    .label {
+      font-size: 1.2rem;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .columns {
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .is-paddingless {
+      margin: 5px;
+    }
+    .segmented-data-container {
+      // color: $white;
+      padding: 10px;
+      // width: 190px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      min-height: 180px;
+      background-color: $white;
+      img {
+        background: $white;
+        object-fit: contain;
+        max-height: 150px;
+        min-height: 150px;
+        max-width: 150px;
+        border: $dark 1px solid;
+      }
+      span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+        color: $dark;
+        cursor: pointer;
+        object-fit: contain;
+        max-height: 150px;
+        min-height: 150px;
+        max-width: 150px;
+        min-width: 150px;
+        border: $dark 1px solid;
+      }
+    }
+    .divcenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .impression-name {
+      padding-top: 8px;
+      display: flex;
+      justify-content: center;
+      color: $dark;
+    }
+  }
+
+  //Footer
+  .footer-content {
+    display: grid;
+    flex-grow: 1;
+    grid-template-areas: "left  right";
+    grid-template-columns: 1fr 1fr;
+
+    .left {
+      grid-area: left;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .right {
+      grid-area: right;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+html[dir="rtl"] .update-criminal-modal .case-content .case-field .button {
+  margin-right: 0;
+}

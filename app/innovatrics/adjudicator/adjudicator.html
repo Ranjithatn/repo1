@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Adjudicator</title>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" media="all" href="./adjudicator-style.css" /> <!-- minified stylesheet -->
+
+  <style type="text/css">
+    html,
+    body,
+    #container {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+  </div>
+  <script src="./bundle.js"></script> <!-- minified javascripts -->
+
+  <script>
+    const electron = require('electron');
+    const {ipcRenderer} = electron;
+    const {getCurrentWindow} = electron.remote;
+    window.adjudicatorElectron.init({
+      language: localStorage.getItem('lang') || "en",
+      mountElement: '#container',
+    }).then((app) => {
+      ipcRenderer.on('adjudicator:receiveData', (event, data) => {
+        app.render(data);
+      });
+      getCurrentWindow().webContents.send('adjudicator:ready');
+    });
+  </script>
+</body>
+
+</html>

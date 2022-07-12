@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddRecord /> should render without crashing 1`] = `
+<AddRecord
+  formatMessage={[Function]}
+  newCrimeType={
+    Object {
+      "CaseType": "",
+    }
+  }
+>
+  <div
+    className="case-field"
+  >
+    <div
+      className="control"
+    >
+      <Select
+        defaultValue="Filter"
+        formatMessage={[Function]}
+        id="CaseType"
+        name="CrimeType"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "displayName": "Drug",
+              "value": "Drug",
+            },
+            Object {
+              "displayName": "Murder",
+              "value": "Murder",
+            },
+            Object {
+              "displayName": "Robbery",
+              "value": "Robbery",
+            },
+          ]
+        }
+        value=""
+      >
+        <div
+          className="select "
+        >
+          <select
+            defaultValue="Filter"
+            disabled={false}
+            id="CaseType"
+            name="CrimeType"
+            onChange={[Function]}
+            style={Object {}}
+            value=""
+          >
+            <option
+              selected={true}
+              value=""
+            />
+            <option
+              key="Drug"
+              value="Drug"
+            >
+               
+              Drug
+            </option>
+            <option
+              key="Murder"
+              value="Murder"
+            >
+               
+              Murder
+            </option>
+            <option
+              key="Robbery"
+              value="Robbery"
+            >
+               
+              Robbery
+            </option>
+          </select>
+        </div>
+      </Select>
+    </div>
+    <div
+      className="control"
+    >
+      <Input
+        className="input"
+        id="Description"
+        onChange={[Function]}
+        placeholder="typeSubject"
+        type="text"
+      >
+        <div
+          className="control"
+          style={Object {}}
+        >
+          <input
+            className="input"
+            disabled={false}
+            id="Description"
+            onChange={[Function]}
+            onKeyPress={[Function]}
+            placeholder="typeSubject"
+            style={Object {}}
+            type="text"
+          />
+        </div>
+      </Input>
+    </div>
+    <Button
+      className="is-primary is-rounded"
+      disabled={true}
+      id="upmodbackbtn"
+      leftIcon="plus"
+      onClick={[Function]}
+    >
+      <button
+        className="button is-primary is-rounded"
+        disabled={true}
+        id="upmodbackbtn"
+        onClick={[Function]}
+        style={Object {}}
+        type="button"
+      >
+        <Icon
+          icon="plus"
+        >
+          <span
+            className="icon"
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+            title=""
+          >
+            <i
+              className="fa fa-plus"
+            />
+          </span>
+        </Icon>
+      </button>
+    </Button>
+  </div>
+</AddRecord>
+`;

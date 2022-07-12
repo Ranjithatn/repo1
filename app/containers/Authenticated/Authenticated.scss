@@ -1,0 +1,14 @@
+#Authenticated {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+#Authenticated #content {
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+}

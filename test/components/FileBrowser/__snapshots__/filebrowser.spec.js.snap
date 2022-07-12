@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Figure /> should render without crashing 1`] = `
+<FileBrowser>
+  <div
+    className="fileUpload button is-primary is-medium"
+  >
+    <span />
+    <input
+      className="upload"
+      id="myInput"
+      style={Object {}}
+      type="file"
+    />
+  </div>
+</FileBrowser>
+`;

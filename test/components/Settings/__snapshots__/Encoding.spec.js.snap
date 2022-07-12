@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Encoding /> should render without crashing 1`] = `
+<Encoding
+  formatMessage={[Function]}
+>
+  <div>
+    <h1>
+      SettingsPageEncoding
+    </h1>
+    <div
+      className="input-wrapper"
+    >
+      <label>
+        SelectedImageFormat
+      </label>
+      <input
+        className="input"
+        disabled={true}
+        value="Unspecified"
+      />
+    </div>
+    <div
+      className="input-wrapper"
+    >
+      <label>
+        SelectedTemplateFormat
+      </label>
+      <input
+        className="input"
+        disabled={true}
+        value="Unspecified"
+      />
+    </div>
+  </div>
+</Encoding>
+`;

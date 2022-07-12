@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Innovatrics Latent Editor</title>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Oswald';
+      src: local('Oswald'), url('../resources/Oswald-Regular.ttf');
+    }
+
+    html,
+    body,
+    #root {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    :not(input):not(textarea),
+    :not(input):not(textarea)::after,
+    :not(input):not(textarea)::before {
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: inherit;
+    }
+
+    input,
+    button,
+    textarea,
+    :focus {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="latentEditor"></div>
+  <script src="./bundle.js"></script>
+  <script>
+    const electron = require('electron');
+    const { ipcRenderer } = electron;
+    const { getCurrentWindow } = electron.remote;
+    const currentWindow = getCurrentWindow();
+    window.latentApp.init({
+      mountElement: '#latentEditor',
+      language: localStorage.getItem('lang') || "en",
+    }).then((app) => {
+      ipcRenderer.on('latent:image', (event, data) => {
+        app.receiveImage(data.image).then(() => {
+          setTimeout(function() {
+            currentWindow.webContents.send('latent:image-ready');
+          }, 0);
+        });
+      });
+
+      ipcRenderer.on('latent:sud', async () => {
+        const sud = await app.getSUDTemplate();
+        console.log("sud",sud);
+        currentWindow.webContents.send('crossmatch:sud', { sud });
+      });
+
+      app.render();
+
+      currentWindow.webContents.send('latent:ready');
+    });
+
+  window.addEventListener("unhandledrejection", function(promiseRejectionEvent) {
+    if ( promiseRejectionEvent.reason && promiseRejectionEvent.reason.message === "50000 No license was found." ) {
+      currentWindow.webContents.send('loading-failed', promiseRejectionEvent.reason );
+    }
+    if ( promiseRejectionEvent.reason && promiseRejectionEvent.reason.message.indexOf('1133 Invalid value provided') !== -1 ) {
+      currentWindow.webContents.send('invalid-input', promiseRejectionEvent.reason );
+    }
+      console.log("promiseRejectionEvent.reason.message", promiseRejectionEvent.reason.message );
+      console.log("unhandledrejection::::error occoured", promiseRejectionEvent);
+      console.log("unhandledrejection::::e.message", promiseRejectionEvent.reason);
+  });
+
+  </script>
+</body>
+
+</html>

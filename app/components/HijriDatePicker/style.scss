@@ -1,0 +1,106 @@
+
+/*
+.hijri-datepicker {
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+	}
+}
+*/
+
+.hijri-datepicker {
+	text-align: left;
+}
+.hijri-datepicker h1 {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 5px;
+}
+
+
+
+.hijri-datepicker .hijri-datepicker-input {
+	// font-family: monospace, consolas;
+	font-family: inherit;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+
+
+.hijri-datepicker .hijri-datepicker-calendar {
+	border: 2px solid #CCC;
+	// width: 302px;
+	width: auto;
+	background: #FFF;
+	padding: 10px;
+	position: absolute;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+	z-index: 100;
+}
+
+
+.hijri-datepicker .hijri-datepicker-calendar header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+.hijri-datepicker .hijri-datepicker-calendar header button {
+	cursor: pointer;
+}
+
+
+.hijri-datepicker {
+
+	main {
+		border: 1px solid #000;
+	}
+
+}
+
+
+
+.hijri-datepicker .hijri-datepicker-calendar table {
+	// border: 1px solid #000;
+	// font-family: monospace, consolas;
+	font-family: inherit;
+	padding: 0; margin: 0;
+}
+
+.hijri-datepicker .hijri-datepicker-calendar table thead td {
+	background: #F7F7F7;
+	padding: 2px 7px;
+}
+
+.hijri-datepicker .hijri-datepicker-calendar table tbody td.day {
+	padding: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+.hijri-datepicker .hijri-datepicker-calendar table tbody td.day span { 
+	display: block;
+}
+
+.hijri-datepicker .hijri-datepicker-calendar table tbody td.day:hover {
+	background: #fff9c4;
+}
+
+
+.hijri-datepicker .hijri-datepicker-calendar table tbody td.current-day {
+	background: #EEE;
+	border: 1px solid #333;
+}
+.hijri-datepicker .hijri-datepicker-calendar table tbody td.selected-day {
+	background: #e6ffc8;
+	border: 1px solid #333;
+}
+
+
+
+

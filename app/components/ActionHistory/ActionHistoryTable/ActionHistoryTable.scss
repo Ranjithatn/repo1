@@ -1,0 +1,13 @@
+.actionHistory-table-container .actionHistory-table {
+  width: 100%;
+  tr:hover {
+    cursor: pointer;
+  }
+  tr.selected {
+    background-color: rgba(210, 220, 227, 0.3);
+  }
+}
+
+.actionHistory-table-container .pagination {
+  margin: 0;
+}

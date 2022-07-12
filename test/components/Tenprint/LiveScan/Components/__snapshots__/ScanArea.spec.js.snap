@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScanArea /> should render without crashing 1`] = `
+<Component
+  formatMessage={[Function]}
+  impressionName={
+    Object {
+      "length": [Function],
+    }
+  }
+  supportedDecisions={
+    Object {
+      "length": [Function],
+    }
+  }
+>
+  <div
+    className="column is-half scan-container"
+  >
+    <div
+      className="img-center"
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "minHeight": 450,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "20px",
+            "padding": "20px",
+            "textalign": "center",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "textAlign": "center",
+            }
+          }
+        >
+          clickStartToBeginScan
+        </h2>
+      </div>
+    </div>
+    <span
+      className="spancenter"
+    />
+    <div
+      className="select-container"
+    >
+      <div
+        className="select"
+      >
+        <select
+          className="select"
+          defaultValue={false}
+          onChange={[Function]}
+        />
+      </div>
+         
+      <Button
+        className="is-primary level-left"
+        onClick={[Function]}
+        text="Go"
+      >
+        <button
+          className="button is-primary level-left"
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+          type="button"
+        >
+          <span>
+            Go
+          </span>
+        </button>
+      </Button>
+    </div>
+  </div>
+</Component>
+`;

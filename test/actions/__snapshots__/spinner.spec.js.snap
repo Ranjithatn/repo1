@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions should create startSpinner action 1`] = `
+Object {
+  "type": "REQUEST_SPINNER_START",
+}
+`;
+
+exports[`actions should create stopSpinner action 1`] = `
+Object {
+  "type": "REQUEST_SPINNER_STOP",
+}
+`;

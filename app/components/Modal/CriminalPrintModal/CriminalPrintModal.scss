@@ -1,0 +1,438 @@
+@import "../../../colors.scss";
+
+.criminal-print-modal footer.modal-card-foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+  padding: 0;
+}
+
+@page :left {
+  margin-left: 1cm;
+}
+
+@page :right {
+  margin-left: 1cm;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .modal-card-body,
+  .modal-card-body * {
+    visibility: visible !important;
+  }
+  // printRecord
+
+  .modal-card-head,
+  .modal-card-foot,
+  .footer-content {
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .modal-card-body {
+    position: static !important;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    top: 20px;
+    left: 20px;
+    padding-bottom: 0 !important;
+  }
+}
+
+// .criminal-record-modal label {
+//   font-weight: 400;
+// }
+// .criminal-record-modal .columns .column > label {
+//   font-size: 1.3rem;
+// }
+.criminal-print-modal {
+  .modal-card {
+    width: 750px !important;
+    min-height: 600px !important;
+  }
+  .modal-card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .record-center {
+    .label {
+      font-size: 1.5rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+    }
+    display: flex;
+    flex-direction: column;
+    .columns {
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        img {
+          object-fit: contain;
+          max-height: 200px;
+          min-height: 200px;
+          border: 1px solid $dark-gray;
+        }
+        .field {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 5px 0 10px 0;
+        }
+      }
+    }
+    .is-three-fifths {
+      .print-content {
+        display: grid;
+        flex-grow: 1;
+        grid-template-areas: "left  right";
+        grid-template-columns: 150px 1fr;
+
+        .left {
+          grid-area: left;
+          display: flex;
+          justify-content: flex-start;
+          .label {
+            font-size: 1rem;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+        }
+        .right {
+          grid-area: right;
+          display: flex;
+          justify-content: flex-start;
+          .label {
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+        }
+      }
+    }
+  }
+  .information {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    .label {
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+      padding-left: 5px;
+      margin-bottom: 1px;
+    }
+    .title {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+      padding: 5px;
+    }
+    .crime-block {
+      border: 1px solid $dark-gray;
+      padding: 2px;
+      .punishment {
+        border: 1px solid $dark-gray;
+        .label {
+          margin-bottom: 0;
+        }
+        .print-content {
+          display: grid;
+          flex-grow: 1;
+          grid-template-areas: "left  right left1 right1";
+          grid-template-columns: 150px 1fr 150px 1fr;
+
+          .left {
+            grid-area: left;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 400;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .right {
+            grid-area: right;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 600;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .left1 {
+            grid-area: left1;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 400;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .right1 {
+            grid-area: right1;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 600;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+        }
+        .criminal-class {
+          display: grid;
+          flex-grow: 1;
+          grid-template-areas: "left  right ";
+          grid-template-columns: 1fr 1fr;
+
+          .left {
+            grid-area: left;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 400;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .right {
+            grid-area: right;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 600;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .latent-desc {
+    .latent--main {
+      border: 1px solid $dark-gray;
+      border-radius: 5px;
+      .print-content {
+        padding: 5px;
+        display: grid;
+        flex-grow: 1;
+        grid-template-areas: "left  right left1 right1";
+        grid-template-columns: 150px 1fr 150px 1fr;
+
+        .left {
+          grid-area: left;
+          display: flex;
+          justify-content: flex-start;
+          .label {
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+        }
+        .right {
+          grid-area: right;
+          display: flex;
+          justify-content: flex-start;
+          .label {
+            font-size: 1rem;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+        }
+        .left1 {
+          grid-area: left1;
+          display: flex;
+          justify-content: flex-start;
+          .label {
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+        }
+        .right1 {
+          grid-area: right1;
+          display: flex;
+          justify-content: flex-start;
+          .label {
+            font-size: 1rem;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+        }
+      }
+      
+    }
+    .latent--desc{
+      .label {
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        padding-bottom: 5px;
+      }
+      .columns {
+        border: 1px solid $dark-gray;
+        border-radius: 5px;
+        margin-left: 0;	
+        margin-right: 0;
+        .column {
+          display: flex;
+          flex-direction: column;
+          justify-content: right;
+          .label {
+            font-size: 1rem;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+          }
+
+        }
+      }
+    }
+  }
+  .bio-info {
+    padding-top: 10px;
+    .label {
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+    }
+    .columns {
+      border: 1px solid $dark-gray;
+      border-radius: 5px;
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        .print-content {
+          display: grid;
+          flex-grow: 1;
+          grid-template-areas: "first  second third fourth";
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+
+          .first {
+            grid-area: first;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 400;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .second {
+            grid-area: second;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 600;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .third {
+            grid-area: third;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 400;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+          .fourth {
+            grid-area: fourth;
+            display: flex;
+            justify-content: flex-start;
+            .label {
+              font-size: 1rem;
+              font-weight: 600;
+              display: flex;
+              flex-direction: column;
+              align-items: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-content {
+    display: grid;
+    flex-grow: 1;
+    grid-template-areas: "left  right";
+    grid-template-columns: 1fr 1fr;
+
+    .left {
+      grid-area: left;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .right {
+      grid-area: right;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+html[dir="rtl"] {
+  .criminal-print-modal {
+    .information {
+      .label {
+        padding-right: 5px;
+      }
+    }
+  }
+}

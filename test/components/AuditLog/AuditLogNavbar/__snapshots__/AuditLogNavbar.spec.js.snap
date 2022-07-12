@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AuditLogNavbar /> should render without crashing 1`] = `
+<Component
+  formatMessage={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "id": "AuditLogs",
+          },
+        ],
+        Array [
+          Object {
+            "id": "AuditLogs",
+          },
+        ],
+      ],
+    }
+  }
+  history="history"
+>
+  <div
+    className="audit-log-navbar"
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <div
+      className="home-logo-icon"
+    >
+      <Icon
+        icon="home fa-2x"
+        onClick={[Function]}
+      >
+        <span
+          className="icon"
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+          title=""
+        >
+          <i
+            className="fa fa-home fa-2x"
+          />
+        </span>
+      </Icon>
+    </div>
+    <div
+      className=""
+    >
+      <Title
+        as="h1"
+        is="4"
+      >
+        <h1
+          className="title is-4"
+        />
+      </Title>
+    </div>
+    <div
+      className="right"
+    />
+  </div>
+</Component>
+`;

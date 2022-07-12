@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Svg /> should render without crashing 1`] = `
+<SVG>
+  <svg>
+    <path
+      className="svg"
+    />
+  </svg>
+</SVG>
+`;

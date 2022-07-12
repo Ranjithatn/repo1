@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers spinner should handle REQUEST_SPINNER_START 1`] = `1`;
+
+exports[`reducers spinner should handle REQUEST_SPINNER_STOP 1`] = `0`;
+
+exports[`reducers spinner should handle initial state 1`] = `0`;
+
+exports[`reducers spinner should handle unknown action type 1`] = `0`;

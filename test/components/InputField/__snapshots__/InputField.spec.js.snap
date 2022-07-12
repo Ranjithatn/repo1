@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputField /> should render without crashing 1`] = `
+<InputField>
+  <div
+    className="field"
+  >
+    <div
+      className="control"
+    >
+      <Input
+        className=""
+        disabled={false}
+        id=""
+        name=""
+        onKeyPress={[Function]}
+        placeholder=""
+        type="text"
+      >
+        <div
+          className="control"
+          style={Object {}}
+        >
+          <input
+            className=""
+            disabled={false}
+            id=""
+            name=""
+            onKeyPress={[Function]}
+            placeholder=""
+            style={Object {}}
+            type="text"
+          />
+        </div>
+      </Input>
+    </div>
+  </div>
+</InputField>
+`;

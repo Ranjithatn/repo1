@@ -1,0 +1,296 @@
+@import "../../../colors.scss";
+#Authenticated #content{
+  overflow: hidden
+}
+.VerifierWorkflow-Wrapper.tenprintverify-main {
+  .top{
+    background-color: $dark-gray;
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding: 0 1rem 0 1rem;
+    .left,
+    .right,
+    center {
+      flex: 1;
+    }
+    .left{
+      display: flex;
+      justify-content: flex-start;      
+    }
+    .right{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .center {
+      grid-area: center;
+      display: flex;
+      justify-content: center;
+      h1{
+        color: $white;
+      }
+    }
+    
+  }
+  .left {
+    h1{
+      color: $white;
+      background: $dark-gray;
+    }
+    .dark-container {
+      background: $light-gray;
+      display: block;
+      flex-direction: column;
+      overflow: scroll;
+      overflow-x: hidden;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      min-height: 100px;
+
+      //   // background: $white;
+      .svg-fill {
+        fill: $dark-gray;
+        cursor: pointer;
+        padding: 10px;
+        // stroke: aqua;
+      }
+      .svg-select {
+        fill: $dark-gray;
+        cursor: pointer;
+        padding: 10px;
+        stroke: $green;
+        stroke-width: 2px;
+      }
+      .svgrotate {
+        transform: scaleX(-1);
+        transform-origin: 50% 50%;
+        // -webkit-transform: scaleX(-1)
+      }
+    }
+    .divcenter {
+      color: $dark;
+      padding: 5px;
+      font-size: small;
+      display: flex;
+      justify-content: center;
+    }
+    .match-text-hide {
+      display: none;
+    }
+    .match-text {
+      color: $white;
+      padding: 5px;
+      font-size: small;
+      display: flex;
+      justify-content: center;
+      background: $green;
+      margin-top: -18px;
+      padding: 0;
+    }
+    .myimgwhside {
+      height: 14vh;
+      width: 14vh;
+      background-color: $white;
+      border: 2px solid $dark;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .myimgwhsideglow {
+      height: 14vh;
+      width: 14vh;
+      background-color: $white;
+      border: 2px solid $green;
+      border-radius: 3px;
+    }
+    .columns {
+      .column {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .segmented-data-container {
+      // color: $white;
+      padding: 10px;
+      // width: 190px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      height: 14vh;
+      width: 14vh;
+      background-color: $white;
+      border-radius: 3px;
+      cursor: pointer;
+      span{
+        color: $dark
+      }
+    }
+  }
+
+  .main {
+    .tenprint-hit-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: $dark-gray;
+      min-height: 45px;
+      .tenprint-left,
+      .tenprint-center,
+      .tenprint-right {
+        flex: 1;
+      }
+      .tenprint-left {
+        display: flex;
+        justify-content: flex-start;
+        h1 {
+          color: $light-gray;
+        }
+      }
+      .tenprint-center {
+        display: flex;
+        justify-content: center;
+      }
+      .tenprint-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .show {
+      display: flex;
+    }
+    .hide {
+      display: none;
+    }
+    .adjudicatordiv {
+      min-height: 500px;
+    }
+    .main-container {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      .title-container{
+        h1{
+          padding-left: 20px;
+          color: $white;
+        }
+      }
+    
+      .table {
+        margin-bottom: 0;
+      }
+      .divcenter {
+        color: $white;
+        padding: 5px;
+        font-size: small;
+      }
+      .columns {
+        padding: 10px;
+        display: flex;
+      }
+      .matchImg {
+        background: $white;
+      }
+      .matchtable {
+        background: $white;
+        width: 100%;
+        height: 40px;
+      }
+
+      .myimgmiddle {
+        height: 14vh;
+        width: 14vh;
+        background-color: $white;
+        border: 1px solid $dark;
+        border-radius: 3px;
+      }
+
+      #segmented-section {
+        padding: 0 30px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(120px, 1fr));
+        justify-content: center;
+        // align-items: center;
+        min-height: 190px;
+        .columns {
+          display: flex;
+          margin-bottom: 0;
+          .column {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0 !important;
+          }
+        }
+        .is-paddingless {
+          margin: 5px;
+        }
+        .segmented-data-container {
+          // color: $white;
+          padding: 10px;
+          // width: 190px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 14px;
+          min-height: 180px;
+          background-color: $white;
+          // cursor: pointer;
+        }
+        .divcenter {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .impression-name {
+          padding-top: 8px;
+          display: flex;
+          justify-content: center;
+          color: $white;
+        }
+        .segmented-data-container > img {
+          background: $white;
+          // width: 100%;
+          // height: 100%;
+          object-fit: contain;
+          // max-height: 180px;
+          height: 150px;
+          width: 150px;
+        }
+      }
+
+      .blank-data {
+        display: flex;
+      }
+    }
+    .table > tr {
+      cursor: pointer;
+      i{
+        color: $green;
+      }
+    }
+    .table .selected {
+      background-color: rgba(210, 220, 227, 0.3);
+      // background-color: red;
+    }
+  }
+  .tenprint-verify-table{
+    .match-bar {
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      padding: 10px;
+      background-color: $dark-gray;
+      min-height: 45px;
+     
+    }
+  }
+}

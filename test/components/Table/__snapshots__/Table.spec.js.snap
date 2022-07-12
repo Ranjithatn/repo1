@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table /> should render without crashing 1`] = `
+<Table>
+  <table
+    className="table"
+  >
+    <thead>
+      <tr />
+    </thead>
+    <tbody />
+  </table>
+</Table>
+`;

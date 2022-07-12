@@ -1,0 +1,70 @@
+@import "../../../colors.scss";
+
+#tenprint {
+  .config-contents {
+    flex-grow: 1;
+    background-color: $dark;
+    padding-top: 5%;
+    overflow: auto;
+    .cardscan-config-fields {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      label {
+        color: $white;
+        font-weight: 400;
+      }
+      button {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    .subtitle {
+      color: $white;
+    }
+  }
+}
+
+// .Workflow-Wrapper.tenprint-card {
+//   .tenprint-format-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     flex-grow: 1;
+//     .dropdown-trigger>button {
+//       background: transparent;
+//       border: none;
+//       color: white;
+//     }
+//     .dropdown-item {
+//       text-align: center;
+//       &.is-hoverable:hover {
+//         background: $green;
+//         color: $white;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+//   .img-format-container {
+//     padding: 5px;
+//     display: flex;
+//     background: $dark;
+//     color: $white;
+//     font-size: 15px;
+//   }
+//   .img-container {
+//     height: 90px;
+//     width: 90px;
+//     background: $white;
+//   }
+//   .foot {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .progress {
+//       width: 500px;
+//     }
+//   }
+// }

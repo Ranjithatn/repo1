@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Reason /> should render without crashing 1`] = `
+<Reason>
+  <div
+    className="reason"
+  >
+    <Label
+      text=""
+    >
+      <label
+        className="label"
+        htmlFor=""
+        name=""
+        style={Object {}}
+      />
+    </Label>
+    <Select
+      className="is-fullwidth"
+      disabled={true}
+    >
+      <div
+        className="select  is-fullwidth"
+      >
+        <select
+          disabled={true}
+          id=""
+          name=""
+          style={Object {}}
+        />
+      </div>
+    </Select>
+  </div>
+</Reason>
+`;

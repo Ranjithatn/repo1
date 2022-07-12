@@ -1,0 +1,75 @@
+
+.component--settings {
+
+	.left {
+		width: 250px;
+		top: 53px;
+		left: 0;
+		position: fixed;
+		bottom: 0;
+	}
+
+	nav {
+		margin-top: 40px;
+
+		.tab {
+			cursor: pointer;
+			margin-bottom: 3px;
+			padding: 10px;
+			padding-left: 20px;
+			font-weight: bold;
+
+			&.active {
+				background: #2d3f4b;
+				color: #FFF;
+			}
+
+		}
+
+
+	}
+
+
+
+	.component--settings-content {
+		padding: 40px;
+    display: block;
+    position: absolute;
+    // left: 250px;
+    // right: 0;
+    &.rtl { right: 0; left: 250px;; }
+    &.ltr { left: 250px; right: 0; }
+	}
+
+	h1 {
+		font-size: 20px;
+		color: #000;
+		border-bottom: 1px solid #CCC;
+		padding-bottom: 4px;
+	}
+
+
+	.input-wrapper {
+		margin-top: 20px;
+		label { width: 200px; display: inline-block; line-height: 36px; }
+		.input { width: 200px; }
+	}
+
+
+
+}
+#tenprint{
+	.main--settings{
+        display:flex;
+		justify-content:flex-end;
+		cursor: pointer;
+	}
+}
+
+html[dir=rtl] {
+	#tenprint{
+		.main--settings{
+			direction: ltr;
+		}
+	}
+}

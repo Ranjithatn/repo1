@@ -1,0 +1,86 @@
+.Workflow-Wrapper.tenprint-card-scanned {
+  #WorkflowWrapper-main {
+    position: relative;
+    display: flex;
+  }
+  .cardscan-rebox {
+    margin: 0;
+    position: relative;
+    padding: 50px;
+  }
+
+  .is-handicapped {
+    background: #ffe09f;
+    opacity: 0.75;
+  }
+
+
+
+
+
+  .grabbable {
+    border: 3px solid rgba(0, 255, 0, 0.3);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    cursor: -webkit-grab;
+    .fp-label {
+      position: absolute;
+      top: 0;
+      font-size: 12px;
+    }
+    .rotate {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 20px;
+      height: 20px;
+      background: url("../../../../../images/icon-rotate.png");
+      background-size: contain;
+      // background-color: orange;
+      &:hover {
+        // cursor: url("../../../../../images/icon_rotate.png");
+        cursor: pointer;
+        // content: "\f0e2";
+        // a:hover:before {
+        //   content: "\f099"; /* Code of the icon you want to change on hover */
+        // }
+      }
+    }
+    .handle {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 20px;
+      height: 20px;
+      background: url("../../../../../images/icon-crop.png");
+      background-size: contain;
+      &:hover {
+        cursor: nwse-resize !important;
+      }
+    }
+    .delete {
+      position: absolute;
+      bottom: 0px;
+      right: 25px;
+      width: 20px;
+      height: 20px;
+      background: url("../../../../../images/icon-delete.png");
+      background-size: contain;
+    }
+    &:active {
+      cursor: -webkit-grab;
+      border: 4px dotted rgba(0, 255, 0, 1);
+      .fp-label {
+        font-weight: bold;
+      }
+    }
+  }
+  img.cardscan-img {
+    // padding: 50px;
+  }
+  .box-actions {
+    position: fixed;
+    padding-top: 5px;
+  }
+}
